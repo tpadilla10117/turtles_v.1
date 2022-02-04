@@ -1,12 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './frontend/components/App';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <ScrollToTop/>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
