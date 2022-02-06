@@ -32,8 +32,6 @@
                 (<Nav isOpen={isOpen} navToggle={navToggle} />)
 
             }
-            
-
 
 
             {/* TODO: Sidebar component for the menu overlay on nav button click */}

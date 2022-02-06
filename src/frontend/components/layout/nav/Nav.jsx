@@ -48,8 +48,8 @@ const Nav = (props) => {
             {NavbarData.map( (item, index) => {
                 return (
                     <NavLink to={item.path} 
-                        exact
-                        activeClassName='active'
+                        exact='true'
+                        activeclassname='active'
                         className='main-nav-item'
                         style={ {textDecoration: "none"} } 
                         key={index}
