@@ -1,3 +1,6 @@
+$background-primary: #080A52;
+
+
 .desktopNav-parent-container {
     display: flex;
     position: fixed;
@@ -5,7 +8,7 @@
     justify-content: space-around;
     flex-wrap: nowrap;
     border: 5px solid red;
-
+    background-color: $background-primary;
 
     .desktop-nav-items-container {
         display: flex;
@@ -22,6 +25,7 @@
                 li {
                     list-style: none;
                     text-decoration: none;
+                    color: #fff;
                 }
             }
         }
