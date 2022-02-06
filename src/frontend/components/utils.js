@@ -3,6 +3,8 @@
     /* "layout" components: */
         export { default as Nav } from '../components/layout/nav/Nav.jsx';
 
+        export { default as DesktopNav } from '../components/layout/desktopNav/DesktopNav.jsx';
+
         export { default as Header } from '../components/layout/header/Header.jsx';
 
 
