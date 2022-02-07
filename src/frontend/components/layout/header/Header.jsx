@@ -1,7 +1,7 @@
 /* Header Component is to contain the navigation components: */
 
     import React, {useState, useEffect} from 'react';
-    import {Nav, DesktopNav} from '../../utils';
+    import {Nav, DesktopNav, Sidebar} from '../../utils';
 
     const Header = () => {
 
@@ -33,8 +33,7 @@
 
             }
 
-
-            {/* TODO: Sidebar component for the menu overlay on nav button click */}
+            <Sidebar isOpen={isOpen} navToggle={navToggle} />
 
         </header> 
     );
