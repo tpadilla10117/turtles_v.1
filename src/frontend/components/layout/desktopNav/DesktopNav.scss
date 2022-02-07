@@ -14,14 +14,19 @@ $background-primary: #080A52;
         display: flex;
         
 
+        a:last-child {
+            border: 5px solid red;
+            display: none;
+        }
+        
         .desktopNav-nav-item {
             display: flex;
-            border: 5px solid blue;
+            /* border: 5px solid blue; */
+            padding: 20px;
            
             ul {
-                border: 5px solid yellow;
+                /* border: 5px solid yellow; */
                 
-               
                 li {
                     list-style: none;
                     text-decoration: none;

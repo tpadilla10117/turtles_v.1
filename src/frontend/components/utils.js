@@ -5,6 +5,8 @@
 
         export { default as DesktopNav } from '../components/layout/desktopNav/DesktopNav.jsx';
 
+        export { default as Sidebar } from '../components/layout/sidebar/Sidebar.jsx';
+
         export { default as Header } from '../components/layout/header/Header.jsx';
 
 
