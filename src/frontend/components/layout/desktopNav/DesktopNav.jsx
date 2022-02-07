@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavbarData } from '../../../seed';
 import { NavLink } from 'react-router-dom';
-import './DesktopNav.scss';
+import '../../App.scss';
 
 const DesktopNav = (props) => {
 
