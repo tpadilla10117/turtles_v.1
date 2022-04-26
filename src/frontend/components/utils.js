@@ -26,6 +26,8 @@
 
         export { default as Contact } from '../components/pages/contact/Contact.js';
 
+        export { default as InfoSection } from '../components/layout/infoSection/InfoSection.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 /* Functions: */
