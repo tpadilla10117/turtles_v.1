@@ -1,19 +1,22 @@
 import React from 'react';
-import placeholder2 from '../../../assets/images/placeholder2.jpg';
 
-function LandingImgSection() {
+function LandingImgSection( { text, img } ) {
+
+/* TODO: Intersection observers -> text needs to slide in on scroll */
+
+
   return (
     <section className='landingImgSection-parent-container'>
         <div className='landingImgSection-img-wrapper'>
             <img 
                 className='landingImgSection-img'
                 alt='Some placeholder txt'
-                src={placeholder2}
+                src={img}
             />
 
             <div className='landingImgSection-txt-wrapper'>
                 <h1 className='landingImgSection-txt'>
-                        "Lorem ipsum dolor sit amet"
+                        {text}
                 </h1>
             </div>
         </div>
