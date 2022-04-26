@@ -3,7 +3,6 @@ import { CSSTransition } from 'react-transition-group';
 import { Routes, Route } from 'react-router-dom';
 import {
   Header,
-  Footer,
   Landing,
   About,
   Gallery,
@@ -29,7 +28,7 @@ function App() {
 
       </Routes>
 
-      <Footer />
+      
 
     </div>
   );

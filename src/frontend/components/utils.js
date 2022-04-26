@@ -28,6 +28,10 @@
 
         export { default as InfoSection } from '../components/layout/infoSection/InfoSection.jsx';
 
+        export { default as AboutSection } from '../components/layout/aboutSection/AboutSection.jsx';
+
+        export { default as LandingImgSection } from '../components/layout/landingImgSection/LandingImgSection.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 /* Functions: */

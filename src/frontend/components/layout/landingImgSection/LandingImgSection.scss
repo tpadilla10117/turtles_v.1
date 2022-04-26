@@ -1,0 +1,17 @@
+.landingImgSection-parent-container {
+    height: 500px;
+    width: 100%;
+    max-width: 100%;
+
+    .landingImgSection-img-wrapper {
+        /* height: 500px; */
+        width: 100%;
+        object-fit: cover;
+
+        .landingImgSection-img {
+            object-fit: cover;
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
