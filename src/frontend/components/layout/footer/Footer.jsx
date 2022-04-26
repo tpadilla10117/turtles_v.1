@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { NavbarData } from '../../../seed';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -36,12 +37,30 @@ function Footer() {
             <div className='footer-text'>
                 <h1>Turtles</h1>
                 <p>Aerialist. Performer</p>
+                <p>xxx.xxx.xxxx</p>
             </div>
 
 
             <div className='footer-socialmedia-parent-container'>
                 <div className='footer-socialmedia-wrapper'>
+                    
+                    <div className='footer-socialmedia'>
+                        <a className='socialmedialink'
+                        href='https://github.com/tpadilla10117'
+                        target='blank'
+                        aria-label='Facebook'
+                        >
+                            <FaFacebook />
+                        </a>
+                        <a className='socialmedialink'
+                        href='https://github.com/tpadilla10117'
+                        target='blank'
+                        aria-label='Instagram'
+                        >
+                            <FaInstagram />
+                        </a>
 
+                    </div>
                     
                     <small className='footer-websiterights'>
                     Trin Padilla © {new Date().getFullYear() } All rights reserved.

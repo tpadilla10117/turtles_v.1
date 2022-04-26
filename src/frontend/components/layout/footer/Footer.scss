@@ -41,6 +41,35 @@
             }
         }
 
+        /* Beginning of footer-socialmedia */
+
+        .footer-socialmedia-parent-container {
+            width: 100%;
+            max-width: 1000px;
+
+            .footer-socialmedia-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                
+                .footer-socialmedia {
+                    display: flex;
+                    align-items: flex-start;
+                    
+                    .socialmedialink {
+                        display: flex;
+                        color: $text-secondary;
+
+                        &:hover {
+                            color: $text-primary;
+                        }
+                       
+                    }
+
+                }
+            }
+        }
+
     }
 
 
