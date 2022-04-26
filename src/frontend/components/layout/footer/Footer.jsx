@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { NavbarData } from '../../../seed';
 
 function Footer() {
   return (
@@ -8,9 +9,18 @@ function Footer() {
             <div className='footer-links-container'>
                 <div className='footer-links-wrapper'>
                     <div className='footer-links-items'>
-                        <NavLink className='footer-link' to='/' exact activeClassName='active'>
+                        {/* <NavLink className='footer-link' to='/' activeclassname='active'>
                             Home
-                        </NavLink>
+                        </NavLink> */}
+
+                        {NavbarData.map( footerlinks => {
+                            return (
+                                <NavLink key={footerlinks.id} id={footerlinks.id} to={footerlinks.path} >
+                                    {footerlinks.title}
+                                </NavLink>
+                            )
+                        })}
+
                     </div>
 
                 </div>

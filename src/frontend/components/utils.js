@@ -20,6 +20,11 @@
 
         export { default as Landing } from '../components/pages/landing/Landing.js';
 
+        export { default as About } from '../components/pages/about/About.js';
+
+        export { default as Gallery } from '../components/pages/gallery/Gallery.js';
+
+        export { default as Contact } from '../components/pages/contact/Contact.js';
 
 
 /* -------------------------------------------------------------------------- */
