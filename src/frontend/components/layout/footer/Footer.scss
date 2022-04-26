@@ -9,15 +9,17 @@
 
         .footer-links-container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
+            
 
             .footer-links-wrapper {
                 /* display: flex; */
+                width: 100%;
 
                 .footer-links-items {
                     display: flex;
                     flex-direction: row;
-                    justify-content: center;
+                    justify-content: space-between;
                     /* color: $text-secondary; */
 
                     .footer-link {
@@ -41,7 +43,21 @@
             }
         }
 
-        /* Beginning of footer-socialmedia */
+    /* Contact info Section: */
+
+        .footer-contactinfo {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 25px 0px 25px 0px;
+        }
+
+        .footer-text {
+            margin: 25px 0px 25px 0px;
+            
+        }
+
+    /* Beginning of footer-socialmedia */
 
         .footer-socialmedia-parent-container {
             width: 100%;
@@ -55,10 +71,14 @@
                 .footer-socialmedia {
                     display: flex;
                     align-items: flex-start;
+                    margin: 0px 0px 25px 0px;
                     
                     .socialmedialink {
                         display: flex;
                         color: $text-secondary;
+                        font-size: 50px;
+                        transition: all 0.3s ease 0s;
+                        padding-right: 25px;
 
                         &:hover {
                             color: $text-primary;
@@ -66,6 +86,11 @@
                        
                     }
 
+                }
+
+                .footer-websiterights {
+                    display: flex;
+                    justify-content: flex-start;
                 }
             }
         }

@@ -28,16 +28,14 @@ function Footer() {
 
             </div>
             
-            <div className='footer-addressblock'>
-                <p>
-                    1223 East Cove Ave.
-                    Los Angeles
-                </p>
+            <div className='footer-contactinfo'>
+                <p>1223 East Cove Ave.</p>
+                <p>Los Angeles CA 92617</p>
+                <p>xxx.xxx.xxxx</p>
             </div>
             <div className='footer-text'>
-                <h1>Turtles</h1>
+                <h1>TURTLES</h1>
                 <p>Aerialist. Performer</p>
-                <p>xxx.xxx.xxxx</p>
             </div>
 
 
