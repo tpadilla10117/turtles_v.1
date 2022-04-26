@@ -4,14 +4,36 @@
     max-width: 100%;
 
     .landingImgSection-img-wrapper {
-        /* height: 500px; */
+        height: 100%;
         width: 100%;
         object-fit: cover;
+        position: relative;
 
+        .landingImgSection-txt-wrapper {
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 65%;
+            height: 145px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+            margin-left: 20px;
+
+            .landingImgSection-txt {
+                color: $text-secondary;
+                font-size: $heading-primary;
+            }
+            
+        }
         .landingImgSection-img {
             object-fit: cover;
             width: 100%;
             height: 500px;
         }
+
+        
     }
+  
 }

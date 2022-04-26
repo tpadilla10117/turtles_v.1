@@ -11,6 +11,11 @@ function LandingImgSection() {
                 src={placeholder2}
             />
 
+            <div className='landingImgSection-txt-wrapper'>
+                <h1 className='landingImgSection-txt'>
+                        "Lorem ipsum dolor sit amet"
+                </h1>
+            </div>
         </div>
 
     </section>
