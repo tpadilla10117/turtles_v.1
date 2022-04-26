@@ -15,7 +15,7 @@ function Footer() {
 
                         {NavbarData.map( footerlinks => {
                             return (
-                                <NavLink key={footerlinks.id} id={footerlinks.id} to={footerlinks.path} >
+                                <NavLink key={footerlinks.id} id={footerlinks.id} to={footerlinks.path} className='footer-link' >
                                     {footerlinks.title}
                                 </NavLink>
                             )
@@ -26,11 +26,32 @@ function Footer() {
                 </div>
 
             </div>
+            
+            <div className='footer-addressblock'>
+                <p>
+                    1223 East Cove Ave.
+                    Los Angeles
+                </p>
+            </div>
+            <div className='footer-text'>
+                <h1>Turtles</h1>
+                <p>Aerialist. Performer</p>
+            </div>
+
+
+            <div className='footer-socialmedia-parent-container'>
+                <div className='footer-socialmedia-wrapper'>
+
+                    
+                    <small className='footer-websiterights'>
+                    Trin Padilla © {new Date().getFullYear() } All rights reserved.
+                    </small>
+                </div>
+
+            </div>
 
         </div>
-        Footer
-
-
+        
 
     </section>
   )

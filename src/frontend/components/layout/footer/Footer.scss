@@ -2,10 +2,45 @@
     background-color: $background-primary;
 
     .footer-wrapper {
-        display: flex;
+        /* display: flex; */
         max-width: 1100px;
         padding: 48px 24px;
-        
+        color: $text-secondary;
+
+        .footer-links-container {
+            display: flex;
+            justify-content: center;
+
+            .footer-links-wrapper {
+                /* display: flex; */
+
+                .footer-links-items {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    /* color: $text-secondary; */
+
+                    .footer-link {
+                        color: $text-secondary;
+                        text-decoration: none;
+                        letter-spacing: 1px;
+                        font-size: 14px;
+                        opacity: 1;
+
+                        &.active {
+                            color: $text-primary;
+                        }
+
+                        &:hover {
+                            color: $text-primary;
+                            transition: 0.3s ease-out;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
 
