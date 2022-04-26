@@ -18,6 +18,7 @@
 
     /* "pages" components: */
 
+        export { default as Landing } from '../components/pages/landing/Landing.js';
 
 
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
+import { Routes, Route } from 'react-router-dom';
 import {
   Header,
-  Footer
+  Footer,
+  Landing
 
 } from './utils';
 import './App.scss';
@@ -15,8 +17,13 @@ function App() {
         <Header />
       </CSSTransition>
 
-      <Footer />
-      
+      <Routes>
+        <Route path='/' element={<Landing />} />
+
+      </Routes>
+
+      {/* <Footer /> */}
+
     </div>
   );
 }
