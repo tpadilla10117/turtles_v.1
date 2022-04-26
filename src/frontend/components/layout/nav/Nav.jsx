@@ -12,7 +12,7 @@ const Nav = (props) => {
 
     /* Box and transparent are referencing inline style properties: */
    const box = {
-    background: /* 'hsla(0,0%,42.7%,.12)' */'#24496A',
+    background: /* 'hsla(0,0%,42.7%,.12)' */'#080A52',
     boxShadow: '0 3px 30px rgb(0 0 0 / 10%)',
     backdropFilter: 'blur(5px)'
     };
@@ -70,7 +70,7 @@ const Nav = (props) => {
         {/* TODO: For the mobile Icon */}
         <div className='nav-mobile-icon-container'>
            
-            <svg xmlns="http://www.w3.org/2000/svg" className="nav-mobile-icon" fill="none" height="24" width="24" viewBox="0 0 24 24" stroke="currentColor" onClick={navToggle} alt="A three-lined horizontal icon to toggle a navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" className="nav-mobile-icon" fill="none" height="24" width="24" viewBox="0 0 24 24" stroke="#FFF" onClick={navToggle} alt="A three-lined horizontal icon to toggle a navigation menu">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
 

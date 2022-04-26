@@ -1,6 +1,10 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
-import {Header} from './utils';
+import {
+  Header,
+  Footer
+
+} from './utils';
 import './App.scss';
 
 
@@ -11,8 +15,8 @@ function App() {
         <Header />
       </CSSTransition>
 
-
-
+      <Footer />
+      
     </div>
   );
 }

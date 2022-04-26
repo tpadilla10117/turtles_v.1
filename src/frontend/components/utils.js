@@ -9,6 +9,8 @@
 
         export { default as Header } from '../components/layout/header/Header.jsx';
 
+        export { default as Footer } from '../components/layout/footer/Footer.jsx';
+
 
 
 /* -------------------------------------------------------------------------- */
