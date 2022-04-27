@@ -27,7 +27,8 @@
     .emailForm-header-parent-container {
         position: absolute;
         z-index: 2;
-        top: 15%;
+        top: 10%;
+        left: 7%;
 
         .emailForm-header {
             color: $text-secondary;
@@ -48,7 +49,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 150px;
+        padding-top: 180px;
 
         .emailForm-form {
             width: 260px;

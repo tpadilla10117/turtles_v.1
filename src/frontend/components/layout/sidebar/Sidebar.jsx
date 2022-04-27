@@ -2,6 +2,7 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { NavLink } from 'react-router-dom';
 import { NavbarData } from '../../../seed';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import "../../App.scss";
 
 const Sidebar = (props) => {
@@ -11,8 +12,8 @@ const Sidebar = (props) => {
     return (
         <CSSTransition in={isOpen} timeout={300} unmountOnExit onEnter={ () => navToggle} onExited={ () => navToggle} classNames="sidebar-transition">
             <nav className='sidebar-parent-container'>
-                <div className='sidebar-icon-container'>
-                    {/* TODO: svg className='close-icon' */}
+                <div className='sidebar-icon-container' onClick={navToggle}>
+                    <CloseRoundedIcon />
 
                 </div>
 
