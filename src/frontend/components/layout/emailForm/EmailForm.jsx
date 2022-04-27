@@ -5,6 +5,10 @@ function EmailForm( {bannerImg, alt} ) {
     <div className='emailForm-parent-container'>
       <img src={bannerImg} alt={alt} className='emailForm-img' />
 
+      <div className='emailForm-header-parent-container'>
+        <h1 className='emailForm-header'>Contact Me</h1>
+      </div>
+
       <div className='emailForm-wrapper'>
         <form className='emailForm-form'>
           <div className='emailForm-form-input-wrapper'>

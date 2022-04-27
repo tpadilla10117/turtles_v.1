@@ -24,6 +24,16 @@
         top: -220px;
     }
 
+    .emailForm-header-parent-container {
+        position: absolute;
+        z-index: 2;
+        top: 15%;
+
+        .emailForm-header {
+            color: $text-secondary;
+        }
+    }
+
     .emailForm-wrapper {
         position: absolute;
         z-index: 2;
