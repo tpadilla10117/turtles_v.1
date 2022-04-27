@@ -31,6 +31,11 @@
 
         .emailForm-header {
             color: $text-secondary;
+            font-family: $header-primaryfont;
+            font-weight: 400;
+            font-size: $heading-primary;
+            /* TODO: Needs shadow */
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
 
@@ -61,17 +66,17 @@
                 border-radius: 5px;
                 padding: 0 10px;
                 margin: 10px 0px;
+                font-family: $button-primaryfont;
                 font-size: 14px; /* TODO: Change */
-                /* font-family: ; */ /* TODO: update */
-
-                /* &::placeholder {
-                    font-family: ;
-                } */
+                
+                &::placeholder {
+                    font-family: $button-primaryfont;
+                } 
             }
 
             textarea {
                 width: 330px;
-                height: 40px;
+                height: 120px;
                 outline: none;
                 border: none;
                 border-radius: 5px;
@@ -79,12 +84,12 @@
                 padding: 0 10px;
                 padding-top: 10px;
                 margin: 10px 0px;
+                font-family: $button-primaryfont;
                 font-size: 14px; /* TODO: Change */
-                /* font-family: ; */ /* TODO: update */
-
-                /* &::placeholder {
-                    font-family: ;
-                } */
+                
+                &::placeholder {
+                    font-family: $button-primaryfont;
+                } 
                 
             }
         }
