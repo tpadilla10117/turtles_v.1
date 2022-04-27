@@ -32,6 +32,10 @@
 
         export { default as LandingImgSection } from '../components/layout/landingImgSection/LandingImgSection.jsx';
 
+        export { default as EmailSection } from '../components/layout/emailSection/EmailSection.jsx';
+
+        export { default as EmailForm } from '../components/layout/emailForm/EmailForm.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 /* Functions: */
