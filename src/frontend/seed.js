@@ -1,5 +1,10 @@
 /* For default data to be used in project: */
 
+import MailRoundedIcon from '@mui/icons-material/MailRounded';
+import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import CollectionsRoundedIcon from '@mui/icons-material/CollectionsRounded';
+
 export const NavbarData = [
 
     {
@@ -13,6 +18,7 @@ export const NavbarData = [
       spy: true,
       exact: 'true',
       offset: -80,
+      img: HomeRoundedIcon
   },
   {
     title: 'About',
@@ -24,7 +30,8 @@ export const NavbarData = [
     duration: 500,
     spy: true,
     exact: 'true',
-    offset: -80
+    offset: -80,
+    img: PersonRoundedIcon
 },
 
  {
@@ -37,7 +44,8 @@ export const NavbarData = [
     duration: 500,
     spy: true,
     exact: 'true',
-    offset: -80
+    offset: -80,
+    img: CollectionsRoundedIcon
 },
 {
     title: 'Contact',
@@ -50,7 +58,8 @@ export const NavbarData = [
     duration: 500,
     spy: true,
     exact: 'true',
-    offset: -80
+    offset: -80,
+    img: MailRoundedIcon
 },
 
 ]
