@@ -21,13 +21,16 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    font-family: $paragraph-lightfont;
+                    
                     /* color: $text-secondary; */
 
                     .footer-link {
                         color: $text-secondary;
                         text-decoration: none;
                         letter-spacing: 1px;
-                        font-size: 14px;
+                        font-size: 16px;
+                        font-family: $paragraph-lightfont;
                         opacity: 1;
 
                         &.active {
@@ -51,11 +54,17 @@
             align-items: flex-start;
             flex-direction: column;
             margin: 25px 0px 25px 0px;
+            font-family: $paragraph-lightfont;
         }
 
         .footer-text {
             margin: 25px 0px 25px 0px;
-            
+            font-family: $paragraph-lightfont;
+
+            h1 {
+                font-family: $header-primaryfont;
+                font-size: $heading-primary;
+            }
         }
 
     /* Beginning of footer-socialmedia */
@@ -92,6 +101,8 @@
                 .footer-websiterights {
                     display: flex;
                     justify-content: flex-start;
+                    font-family: $paragraph-lightfont;
+                    font-size: $paragraph-secondary;
                 }
             }
         }
