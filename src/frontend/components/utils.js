@@ -11,6 +11,8 @@
 
         export { default as Footer } from '../components/layout/footer/Footer.jsx';
 
+        export { default as CtaButton } from '../components/layout/ctaButton/CtaButton.jsx';
+
 
 
 /* -------------------------------------------------------------------------- */

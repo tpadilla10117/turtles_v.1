@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+  CtaButton
+} from '../../utils';
+
 /* TODO: Finish styling */
 function EmailForm( {bannerImg, alt} ) {
   return (
@@ -18,6 +22,11 @@ function EmailForm( {bannerImg, alt} ) {
             <textarea rows='5' placeholder='Message' name='message'/>
 
           </div>
+
+          <CtaButton 
+            classnames={'emailForm-form-submitBtn'}
+            text={'Submit'}
+          />
 
         </form>
 
