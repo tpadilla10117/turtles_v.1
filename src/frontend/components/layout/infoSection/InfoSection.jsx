@@ -1,12 +1,13 @@
 import React from 'react'
 
-function InfoSection() {
+function InfoSection( {ptext, headingtxt, infoSectionClassName} ) {
   return (
-    <div>
-        InfoSection
-
-
-    </div>
+    <section className={infoSectionClassName}>
+        <h1>{headingtxt}</h1>
+        <p>
+          {ptext}
+        </p>
+    </section>
   )
 }
 

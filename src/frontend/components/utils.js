@@ -13,6 +13,8 @@
 
         export { default as CtaButton } from '../components/layout/ctaButton/CtaButton.jsx';
 
+        export { default as ComponentWrapper } from '../components/layout/componentWrapper/ComponentWrapper.jsx';
+
 
 
 /* -------------------------------------------------------------------------- */

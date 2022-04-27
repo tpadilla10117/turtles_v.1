@@ -12,3 +12,7 @@
 <!-- Pages Components: -->
     Landing.js -
         TODO: General layout components
+
+    Sidebar.jsx -
+        <!-- TODO: Styling -->
+        <!-- TODO: Onclick of links, the component does not disappear -->

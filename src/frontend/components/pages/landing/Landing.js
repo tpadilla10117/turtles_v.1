@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { 
     AboutSection,
     LandingImgSection,
+    InfoSection,
     EmailSection,
     EmailForm,
     Footer
@@ -20,7 +21,11 @@ const Landing = () => {
     <section className='landing-parent-container'>
       {/* TODO: Carousel */}
 
-      {/* TODO:  infoSection*/}
+      <InfoSection 
+        ptext={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'} 
+        headingtxt={'Welcome to...'}
+        infoSectionClassName={'infoSection-parent-container'}
+      />
 
       <AboutSection />
       <LandingImgSection text={text} img={Placeholder2} />
