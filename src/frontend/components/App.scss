@@ -2,6 +2,14 @@
 @import "layout/desktopNav/DesktopNav.scss";
 @import "layout/sidebar//Sidebar.scss";
 @import "layout/header//Header.scss";
+@import "layout/footer/Footer.scss";
+@import "layout/aboutSection//AboutSection.scss";
+@import "layout/landingImgSection//LandingImgSection.scss";
+@import "layout/emailForm/EmailForm.scss";
+@import "layout/emailSection/EmailSection.scss";
+@import "layout/infoSection/InfoSection.scss";
+@import "layout/ctaButton/CtaButton.scss";
+@import "layout/componentWrapper/ComponentWrapper.scss";
 
 .App {
   height: 100%;

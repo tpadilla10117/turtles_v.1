@@ -11,6 +11,10 @@
 
         export { default as Footer } from '../components/layout/footer/Footer.jsx';
 
+        export { default as CtaButton } from '../components/layout/ctaButton/CtaButton.jsx';
+
+        export { default as ComponentWrapper } from '../components/layout/componentWrapper/ComponentWrapper.jsx';
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -18,7 +22,23 @@
 
     /* "pages" components: */
 
+        export { default as Landing } from '../components/pages/landing/Landing.js';
 
+        export { default as About } from '../components/pages/about/About.js';
+
+        export { default as Gallery } from '../components/pages/gallery/Gallery.js';
+
+        export { default as Contact } from '../components/pages/contact/Contact.js';
+
+        export { default as InfoSection } from '../components/layout/infoSection/InfoSection.jsx';
+
+        export { default as AboutSection } from '../components/layout/aboutSection/AboutSection.jsx';
+
+        export { default as LandingImgSection } from '../components/layout/landingImgSection/LandingImgSection.jsx';
+
+        export { default as EmailSection } from '../components/layout/emailSection/EmailSection.jsx';
+
+        export { default as EmailForm } from '../components/layout/emailForm/EmailForm.jsx';
 
 
 /* -------------------------------------------------------------------------- */

@@ -1,0 +1,101 @@
+.emailForm-parent-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: hsla(0,0%,42.7%,.12);
+    box-shadow: 0 3px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(to top, $background-complement 25%, transparent);
+    }
+
+    .emailForm-img {
+        position: absolute;
+        object-fit: cover;
+        height: 600px;
+        top: -220px;
+    }
+
+    .emailForm-header-parent-container {
+        position: absolute;
+        z-index: 2;
+        top: 10%;
+        left: 7%;
+
+        .emailForm-header {
+            color: $text-secondary;
+            font-family: $header-primaryfont;
+            font-weight: 400;
+            font-size: $heading-primary;
+            /* TODO: Needs shadow */
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .emailForm-wrapper {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 180px;
+
+        .emailForm-form {
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            input {
+                width: 330px;
+                height: 30px;
+                outline: none;
+                border: none;
+                background: $text-secondary;
+                border-radius: 5px;
+                padding: 0 10px;
+                margin: 10px 0px;
+                font-family: $button-primaryfont;
+                font-size: 14px; /* TODO: Change */
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                
+                &::placeholder {
+                    font-family: $button-primaryfont;
+                } 
+            }
+
+            textarea {
+                width: 330px;
+                height: 120px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                background: $text-secondary;
+                padding: 0 10px;
+                padding-top: 10px;
+                margin: 10px 0px;
+                font-family: $button-primaryfont;
+                font-size: 14px; /* TODO: Change */
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                
+                &::placeholder {
+                    font-family: $button-primaryfont;
+                } 
+                
+            }
+        }
+
+    }
+}

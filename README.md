@@ -36,6 +36,10 @@
 - React component for animating vertical scrolling
 - (https://www.npmjs.com/package/react-scroll)
 
+### `npm install @mui/material @emotion/react @emotion/styled`
+### `npm install @mui/icons-material`
+- Material UI (https://mui.com/material-ui/getting-started/installation/)
+
 
 # Getting Started with Create React App
 
