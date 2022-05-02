@@ -74,6 +74,8 @@ export const photoGallery = [
     
 ]
 
+
+
 export const NavbarData = [
 
     {
