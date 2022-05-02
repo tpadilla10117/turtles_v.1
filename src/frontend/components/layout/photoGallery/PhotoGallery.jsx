@@ -4,7 +4,7 @@ import Carousel, { Modal, ModalGateway } from "react-images"; */
 
 function PhotoGallery( { photos } ) {
 /* State for current viewed photo in gallery: */
-    const [currentImage, setCurrentImage] = useState(0);
+    /* const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
     const openModalBox = useCallback( (event, { photo, index}) => {
@@ -15,7 +15,9 @@ function PhotoGallery( { photos } ) {
     const closeModalBox = () => {
         setCurrentImage(0);
         setViewerIsOpen(false);
-      };
+      }; */
+
+    
 
     return (
         <section className='gallery-parent-container'>
@@ -40,7 +42,8 @@ function PhotoGallery( { photos } ) {
                 }
             </ModalGateway> */}
 
-            <div className='gallery-wrapper'>
+            <div className='gallery-wrapper gallery-row'>
+                <div className='gallery-column'>
 
                 {photos.map( photo => {
                     return (
@@ -53,6 +56,26 @@ function PhotoGallery( { photos } ) {
                     )
                     
                 })}
+                </div>
+
+            </div>
+
+            <div id='gallery-modal-parent' className='gallery-modal-parent'>
+                <span className='modal-close cursor'>& times</span>
+                <div className='gallery-modal-content'>
+                    {photos.map( mySlides => {
+                        return (
+                            <div className='modal-myslides'>
+                                <div className='modal-numbertext'>
+                                    {mySlides.id} / 4
+                                </div>
+                                <img src={mySlides.src} />
+                            </div>
+                        )
+                    })}
+
+                </div>
+
             </div>
 
         </section>

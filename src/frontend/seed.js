@@ -49,7 +49,7 @@ export const photoGallery = [
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
         id: 4
-    },
+    },/* 
     
     {
         src: Amanda,
@@ -70,7 +70,7 @@ export const photoGallery = [
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
         id: 6
-    },
+    }, */
     
 ]
 
