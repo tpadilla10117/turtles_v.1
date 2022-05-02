@@ -6,7 +6,8 @@ import {
     InfoSection,
     EmailSection,
     EmailForm,
-    Footer
+    Footer,
+    PhotoGallery
 } from '../../utils.js';
 /* import Placeholder2 from '.././../../assets/images/placeholder2.jpg'; */
 /* import Placeholder1 from '../../../assets/images/placeholder1.jpg'; */
@@ -14,11 +15,17 @@ import TurtlesStudio from '../../../assets/images/turtlesStudio.JPG';
 import TurtlesStudio2 from '../../../assets/images/turtlesStudio2.JPG';
 import EmailPlaceholder from '../../../assets/images/emailplaceholder.jpg';
 import Amanda from '../../../assets/images/Amanda-73.jpeg';
+import { photoGallery } from '../../../seed';
+
 
 
 const Landing = () => {
     const [ text ] = useState('"Lorem ipsum dolor sit amet"');
     const [ emailFormAltTxt ] = useState('A banner')
+    const Photos = [
+      Amanda, TurtlesStudio
+    ]
+    const [isOpen, setIsOpen] = useState(false)
 
   return (
     <section className='landing-parent-container'>
@@ -34,6 +41,7 @@ const Landing = () => {
       <LandingImgSection text={text} img={TurtlesStudio2} />
 
       {/* TODO: Gallery Section */}
+      <PhotoGallery photos={photoGallery} />
 
       <LandingImgSection text={text} img={TurtlesStudio} />
 

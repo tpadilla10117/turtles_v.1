@@ -15,6 +15,7 @@
 
         export { default as ComponentWrapper } from '../components/layout/componentWrapper/ComponentWrapper.jsx';
 
+        export { default as PhotoGallery } from '../components/layout/photoGallery/PhotoGallery.jsx';
 
 
 /* -------------------------------------------------------------------------- */
