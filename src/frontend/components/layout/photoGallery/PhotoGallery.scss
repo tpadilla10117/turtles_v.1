@@ -56,8 +56,8 @@
     .gallery-modal-parent {
         display: none;
         position: fixed;
-        z-index: 1;
-        padding-top: 100px;
+        z-index: 999;
+        padding-top: 400px;
         left: 0;
         top: 0;
         width: 100%;

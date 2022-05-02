@@ -7,8 +7,8 @@ function PhotoGallery( { photos } ) {
     let slideIndex = 1;
 
     const openModal = () => {
-        console.log('clicked')
-        /* document.getElementById('gallery-modal-parent').style.display = 'block'; */
+        console.log('clicked an img to open')
+        document.getElementById('gallery-modal-parent').style.display = 'block';
     };
 
     const closeModal = () => {
@@ -83,6 +83,7 @@ function PhotoGallery( { photos } ) {
                             src={photo.src} 
                             alt={photo.alt}
                             key={photo.id}
+                            onClick={openModal}
                         
                         />
                     )
@@ -96,7 +97,7 @@ function PhotoGallery( { photos } ) {
                 <span className='modal-close cursor'
                     onClick={closeModal}
                 >
-                    & times
+                    X
                 </span>
                 <div className='gallery-modal-content'>
                     {photos.map( mySlides => {
@@ -106,7 +107,7 @@ function PhotoGallery( { photos } ) {
                                 >
                                     {mySlides.id} / 4
                                 </div>
-                                <img onClick={openModal} src={mySlides.src} alt={mySlides.id} />
+                                <img src={mySlides.src} alt={mySlides.id} />
                             </div>
                         )
                     })}
