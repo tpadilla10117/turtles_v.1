@@ -2,24 +2,29 @@
     /* margin: 10px 50px; */
 
     .gallery-row {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
         padding: 0 4px;
-
-    /* Not sure if working... */
-        &:after {
+ */
+        /* &:after {
             content: '';
             display: table;
             clear: both;
-        }
+        } */
 
-        .gallery-column {
-            /* flex: 25%; */
-            /* max-width: 25%; */
-            /* padding: 0 4px; */
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: center;
+        align-content: center;
+        grid-gap: 15px;
+        height: 100%;
+        margin: 20px 0 20px 0;
+
+      /*   .gallery-column {
+            
             float: left;
             width: 25%;
-
+ */
             img {
                 /* width: 238px; */
                 width: 100%;
@@ -28,14 +33,20 @@
                 /* padding: 5px; */
                 filter: grayscale(100%);
                 transition: 1s;
+                height: 200px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+                /* margin: 5px 0 5px 0; */
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
 
             img:hover {
                 filter: grayscale(0);
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
 
-        }
+        /* } */
 
         /* @media screen and (max-width: 600px) {
             .gallery-column {
@@ -57,13 +68,14 @@
         display: none;
         position: fixed;
         z-index: 999;
-        padding-top: 400px;
+        padding-top: 200px;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         overflow: auto;
         background-color: black;
+        
 
         .modal-close {
             color: white; //TODO: change
@@ -73,7 +85,7 @@
             font-size: 35px;
             font-weight: bold;
 
-            &.hover, &.focus {
+            &:hover, &.focus {
                 color: #999; //TODO: change
                 text-decoration: none;
                 cursor: pointer;
@@ -82,7 +94,7 @@
 
         .gallery-modal-content {
             position: relative;
-            background-color: #fefefe; //TODO: change
+            /* background-color: #fefefe; */ //TODO: change
             margin: auto;
             padding: 0;
             width: 90%;
@@ -90,6 +102,23 @@
 
             .modal-myslides {
                 display: none;
+                /* position: absolute; */
+                opacity: 0;
+                transition: 250ms opacity ease-in-out;
+                transition-delay: 200ms;
+
+                &.active {
+                    opacity: 1;
+                    transition-delay: 0ms;
+                }
+                
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    z-index: 1;
+                }
+
 
                 .modal-numbertext {
                     color: #f2f2f2;
@@ -126,6 +155,7 @@
                 border-radius: 3px 0 0 3px;
             }
 
+        /* TODO: appears white */
             .gallery-caption-parent-container {
                 text-align: center;
                 background-color: black;

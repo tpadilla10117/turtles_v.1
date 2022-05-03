@@ -9,6 +9,7 @@ function PhotoGallery( { photos } ) {
     const openModal = () => {
         console.log('clicked an img to open')
         document.getElementById('gallery-modal-parent').style.display = 'block';
+        showSlides(slideIndex)
     };
 
     const closeModal = () => {
@@ -24,14 +25,35 @@ function PhotoGallery( { photos } ) {
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
+            slides[i].className = "modal-myslides"
         }
         /* for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         } */
         slides[slideIndex-1].style.display = "block";
+        /* slides[slideIndex-1].className = "modal-myslides active"; */
+        setTimeout(function(){slides[slideIndex-1].className = "modal-myslides active"; }, 1 )
         /* dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt; */
     };
+
+    /* Next / Previous controls: */
+
+    const plusSlides = () => {
+        console.log("clicked")
+        showSlides(slideIndex += 1);
+    };
+
+    const currentSlide = (n) => {
+        showSlides(slideIndex = n);
+    };
+
+    const prevSlides = () => {
+        console.log('clicked prev');
+        showSlides(slideIndex -= 1);
+    }
+
+    
 
 
 
@@ -75,7 +97,7 @@ function PhotoGallery( { photos } ) {
             </ModalGateway> */}
 
             <div className='gallery-wrapper gallery-row'>
-                <div className='gallery-column'>
+                {/* <div className='gallery-column'> */}
 
                 {photos.map( photo => {
                     return (
@@ -89,7 +111,7 @@ function PhotoGallery( { photos } ) {
                     )
                     
                 })}
-                </div>
+                {/* </div> */}
 
             </div>
 
@@ -107,15 +129,15 @@ function PhotoGallery( { photos } ) {
                                 >
                                     {mySlides.id} / 4
                                 </div>
-                                <img src={mySlides.src} alt={mySlides.id} />
+                                <img src={mySlides.src} alt={mySlides.id} className='modal-img'/>
                             </div>
                         )
                     })}
 
                 {/* TODO: Next/Prev controls: */}
 
-                    <a className="modal-prev" /* onClick="plusSlides(-1)" */>&#10094;</a>
-                    <a className="modal-next" /* onClick="plusSlides(1)" */>&#10095;</a>
+                    <a className="modal-prev" onClick={prevSlides}>&#10094;</a>
+                    <a className="modal-next" onClick={plusSlides}>&#10095;</a>
 
 
                 {/* TODO: Caption Text */}
