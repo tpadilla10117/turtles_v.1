@@ -1,6 +1,9 @@
 import React, { useState, useCallback } from 'react';
-/* import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images"; */
+import {
+    CtaButton,
+    InfoSection
+} from '../../utils'
+
 
 function PhotoGallery( { photos } ) {
 
@@ -8,7 +11,7 @@ function PhotoGallery( { photos } ) {
 
     const openModal = () => {
         console.log('clicked an img to open')
-        document.getElementById('gallery-modal-parent').style.display = 'block';
+        document.getElementById('gallery-modal-parent').style.display = 'flex';
         showSlides(slideIndex)
     };
 
@@ -52,49 +55,16 @@ function PhotoGallery( { photos } ) {
         console.log('clicked prev');
         showSlides(slideIndex -= 1);
     }
-
     
-
-
-
-/* State for current viewed photo in gallery: */
-    /* const [currentImage, setCurrentImage] = useState(0);
-    const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-    const openModalBox = useCallback( (event, { photo, index}) => {
-        setCurrentImage(index);
-        setViewerIsOpen(true);
-    }, []);
-
-    const closeModalBox = () => {
-        setCurrentImage(0);
-        setViewerIsOpen(false);
-      }; */
-
-    
-
     return (
         <section className='gallery-parent-container'>
-            {/* <Gallery photos={photos} onClick={openModalBox} />
-            <ModalGateway>
-                {
-                    viewerIsOpen ? (
-                        <Modal onClose={closeModalBox}>
-                            <Carousel
-                                currentIndex={currentImage}
-                                views={photos.map(event => ({
-                                    ...event,
-                                    srcset: event.SrcSet,
-                                    caption: event.caption,
-                                    alt: event.alt,
-                                    thumbnail: event.thumbnail,
-                                    key:currentImage
-                                }))}
-                            />
-                        </Modal>
-                    ) : null
-                }
-            </ModalGateway> */}
+
+            <InfoSection
+                headingtxt={'Take a Peak'}
+                ptext='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
+                infoSectionClassName={'infoSection-gallery-parent-container'}
+            />
+            
 
             <div className='gallery-wrapper gallery-row'>
                 {/* <div className='gallery-column'> */}
@@ -115,6 +85,11 @@ function PhotoGallery( { photos } ) {
 
             </div>
 
+            <CtaButton 
+                text={'Gallery'}
+                classnames={'gallery-btn'}
+            />
+
             <div id='gallery-modal-parent' className='gallery-modal-parent'>
                 <span className='modal-close cursor'
                     onClick={closeModal}
@@ -134,7 +109,7 @@ function PhotoGallery( { photos } ) {
                         )
                     })}
 
-                {/* TODO: Next/Prev controls: */}
+                {/* TODO: Next/Prev controls: need MUI icons*/}
 
                     <a className="modal-prev" onClick={prevSlides}>&#10094;</a>
                     <a className="modal-next" onClick={plusSlides}>&#10095;</a>

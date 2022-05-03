@@ -3,8 +3,8 @@ import React, { useRef, useMemo, useEffect, useState} from 'react';
 function InfoSection( {ptext, headingtxt, infoSectionClassName} ) {
   return (
     <section className={infoSectionClassName}>
-        <h1>{headingtxt}</h1>
         <div>
+          <h1>{headingtxt}</h1>
           <p>
             {ptext}
           </p>

@@ -15,7 +15,11 @@
 
         export { default as ComponentWrapper } from '../components/layout/componentWrapper/ComponentWrapper.jsx';
 
+        export { default as Carousel } from '../components/layout/carousel/Carousel.jsx';
+
         export { default as PhotoGallery } from '../components/layout/photoGallery/PhotoGallery.jsx';
+
+        export { default as TestimonialSection } from '../components/layout/testimonialSection/TestimonialSection.jsx';
 
 
 /* -------------------------------------------------------------------------- */
