@@ -9,6 +9,7 @@
         padding: 48px 24px;
         color: $text-secondary;
 
+
         .footer-links-container {
             display: flex;
             justify-content: flex-start;
@@ -23,6 +24,11 @@
                     flex-direction: row;
                     justify-content: space-between;
                     font-family: $paragraph-lightfont;
+                    
+                    @media screen and (min-width: 760px) {
+                        justify-content: space-around;
+                
+                    }
                     
                     /* color: $text-secondary; */
 
@@ -56,6 +62,11 @@
             flex-direction: column;
             margin: 25px 0px 25px 0px;
             font-family: $paragraph-lightfont;
+
+           /*  @media screen and (min-width: 760px) {
+                border: 1px solid red;
+        
+            } */
         }
 
         .footer-text {
@@ -104,6 +115,11 @@
                     justify-content: flex-start;
                     font-family: $paragraph-lightfont;
                     font-size: $paragraph-secondary;
+
+                    @media screen and (min-width: 760px) {
+                        /* border: 1px solid red; */
+                        justify-content: center;
+                    }
                 }
             }
         }
