@@ -7,6 +7,18 @@
     box-shadow: 0 3px 30px rgb(0 0 0 / 10%);
     backdrop-filter: blur(5px);
 
+    @media screen and (min-width: 760px) {
+        /* justify-content: space-around; */
+       /* border: 1px solid yellow; */
+       
+       display: grid;
+       grid-template-columns: 50% 50%;
+       column-gap: .5rem;
+       padding: .5rem;
+       
+       
+    }
+
 
     &:before {
         content: "";
@@ -15,6 +27,10 @@
         height: 100%;
         z-index: 1;
         background: linear-gradient(to top, $background-complement 25%, transparent);
+
+        @media screen and (min-width: 760px) {
+            display: none;
+        }
     }
 
     .emailForm-img {
@@ -22,6 +38,16 @@
         object-fit: cover;
         height: 600px;
         top: -220px;
+
+        @media screen and (min-width: 760px) {
+            /* justify-content: space-around; */
+           /* border: 1px solid yellow; */
+           width: 100%;
+           top: 0;
+           position: relative;
+           height: 100%;
+           
+        }
     }
 
     .emailForm-header-parent-container {
@@ -29,6 +55,7 @@
         z-index: 2;
         top: 15%;
         left: 7%;
+
 
         .emailForm-header {
             color: $text-secondary;
@@ -51,12 +78,24 @@
         align-items: center;
         padding-top: 180px;
 
+        @media screen and (min-width: 760px) {
+            /* justify-content: space-around; */
+          /*  border: 1px solid yellow;
+           width: 100%;
+           top: -200px; */
+           position: relative;
+        }
+
         .emailForm-form {
             width: 260px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+
+            @media screen and (min-width: 760px) {
+                width: 80%;
+            }
 
             input {
                 width: 330px;
@@ -74,6 +113,10 @@
                 &::placeholder {
                     font-family: $button-primaryfont;
                 } 
+
+                @media screen and (min-width: 760px) {
+                    width: 100%;
+                }
             }
 
             textarea {
@@ -93,6 +136,10 @@
                 &::placeholder {
                     font-family: $button-primaryfont;
                 } 
+
+                @media screen and (min-width: 760px) {
+                    width: 100%;
+                }
                 
             }
         }
