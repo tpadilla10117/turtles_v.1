@@ -1,5 +1,5 @@
 /* Component for a Hero Carousel: */
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 function HeroCarousel( { imgData } ) {
   console.log(imgData)
@@ -19,6 +19,13 @@ function HeroCarousel( { imgData } ) {
     event.target.classList.add('active');
     /* setCurrentSlide() */
   };
+
+  useEffect( () => {
+    document.querySelector('.heroCarousel-navigation-btn').classList.add('active');
+    document.querySelector('.heroCarousel-slide').classList.add('active');
+  },[]);
+
+
 
   /* const slides = document.querySelector('.heroCarousel-slide');
 
