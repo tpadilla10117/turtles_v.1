@@ -2,9 +2,13 @@
 import React, {useState, useEffect} from 'react';
 
 function HeroCarousel( { imgData } ) {
-  console.log(imgData)
 
-/* Carousel Logic: */
+/* CAROUSEL LOGIC: */
+
+  //Using the imgData index to matach against the number from currentSlide
+  //If there's a match, the DOM elements (slide, buttons), get an 'active' class
+  // Else, they get their normal names (**SEE TERNARY IN DOM ELEMENTS**)
+
   let [ currentSlide, setCurrentSlide ] = useState(0);
   const slideLength = imgData.length;
 
@@ -15,6 +19,10 @@ function HeroCarousel( { imgData } ) {
 
   const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+  };
+
+  const previousSlide = () => {
+    setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
   };
 
   const carouselBtns = document.querySelectorAll('.heroCarousel-navigation-btn');
@@ -43,36 +51,15 @@ function HeroCarousel( { imgData } ) {
   },[]); */
 
 
-
-  /* const slides = document.querySelector('.heroCarousel-slide');
-
-  const carouselBtns = document.querySelector('.heroCarousel-navigation-btn'); */
-
-  /* Manual / User Navigation: */
-    /* const manualNavigation = function(manual) {
-      slides[manual].classList.add('active');
-      carouselBtns[manual].classList.add('active');
-    };
-
-    carouselBtns.forEach( (btn, index) => {
-      btn.addEventListener('click', () => {
-        manualNavigation(index);
-        currentSlide = index;
-      });
-    });
- */
-
-
-
   return (
     <section className='heroCarousel-parent-container'>
       <div className='heroCarousel-img-slider'>
-        {imgData.map( img => {
+        {imgData.map( (img, index) => {
           return (
-            <div className={`heroCarousel-slide ${img.id}`} key={img.id}>
+            <div className={index === currentSlide ? 'heroCarousel-slide active' : 'heroCarousel-slide'} key={img.id}>
               <img alt={img.alt} src={img.src} />
               <div className={`heroCarousel-info ${img.id}`}>
-
+              
                 <h2 
                   className={`heroCarousel-title 
                   ${img.title}`}
