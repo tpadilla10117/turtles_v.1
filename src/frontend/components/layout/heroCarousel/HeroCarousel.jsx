@@ -29,6 +29,17 @@ function HeroCarousel( { imgData } ) {
             </div>
           )
         })}
+
+        <div className='heroCarousel-navigation'>
+
+          {imgData.map(btn => {
+            return (
+              <div className={`heroCarousel-navigation-btn ${btn.buttonId}`} key={btn.buttonId}></div>
+            )
+          })}
+
+        </div>
+
       </div>
 
     </section>

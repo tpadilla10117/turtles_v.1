@@ -142,6 +142,7 @@ export const heroCarouselData = [
         caption: 'Turtles Swinging in the studio',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
+        buttonId: 1,
         id: 1
     },
     {
@@ -150,6 +151,7 @@ export const heroCarouselData = [
         caption: 'Turtles Swinging in the studio',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
+        buttonId: 2,
         id: 2
     },
     {
@@ -158,6 +160,7 @@ export const heroCarouselData = [
         caption: 'Turtles Swinging in the studio',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
+        buttonId: 3,
         id: 3
     },
     {
@@ -166,6 +169,7 @@ export const heroCarouselData = [
         caption: 'Turtles Swinging in the studio',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
+        buttonId: 4,
         id: 4
     },
     
