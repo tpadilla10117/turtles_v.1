@@ -134,3 +134,39 @@ export const NavbarData = [
 },
 
 ]
+
+export const heroCarouselData = [
+    {
+        src: TurtlesStudio,
+        title: 'Amanda',
+        caption: 'Turtles Swinging in the studio',
+        alt: 'Turtles Swinging in the studio',
+        thumbnail: 'Turtles Swinging in the studio',
+        id: 1
+    },
+    {
+        src: TurtlesStudio2,
+        title: 'Amanda',
+        caption: 'Turtles Swinging in the studio',
+        alt: 'Turtles Swinging in the studio',
+        thumbnail: 'Turtles Swinging in the studio',
+        id: 2
+    },
+    {
+        src: Amanda,
+        title: 'Amanda',
+        caption: 'Turtles Swinging in the studio',
+        alt: 'Turtles Swinging in the studio',
+        thumbnail: 'Turtles Swinging in the studio',
+        id: 3
+    },
+    {
+        src: Amanda2,
+        title: 'Amanda',
+        caption: 'Turtles Swinging in the studio',
+        alt: 'Turtles Swinging in the studio',
+        thumbnail: 'Turtles Swinging in the studio',
+        id: 4
+    },
+    
+];

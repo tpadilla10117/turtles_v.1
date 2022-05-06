@@ -21,6 +21,8 @@
 
         export { default as TestimonialSection } from '../components/layout/testimonialSection/TestimonialSection.jsx';
 
+        export { default as HeroCarousel } from '../components/layout/heroCarousel/HeroCarousel.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 
