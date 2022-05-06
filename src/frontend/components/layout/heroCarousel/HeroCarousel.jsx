@@ -5,7 +5,7 @@ function HeroCarousel( { imgData } ) {
   console.log(imgData)
 
 /* Carousel Logic: */
-  let [ currentSlide ] = useState(1);
+  let [ currentSlide, setCurrentSlide ] = useState(1);
 
   const slides = document.querySelector('.heroCarousel-slide');
 
@@ -17,6 +17,7 @@ function HeroCarousel( { imgData } ) {
     console.log('clicked btn')
     console.log(event.target)
     event.target.classList.add('active');
+    /* setCurrentSlide() */
   };
 
   /* const slides = document.querySelector('.heroCarousel-slide');
