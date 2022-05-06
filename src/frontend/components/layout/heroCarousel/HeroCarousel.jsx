@@ -5,25 +5,42 @@ function HeroCarousel( { imgData } ) {
   console.log(imgData)
 
 /* Carousel Logic: */
-  let [ currentSlide, setCurrentSlide ] = useState(1);
+  let [ currentSlide, setCurrentSlide ] = useState(0);
+  const slideLength = imgData.length;
+
+  console.log('Here is my imgData array: ', imgData);
+  console.log('Here is my imgData array: ', slideLength);
 
   const slides = document.querySelector('.heroCarousel-slide');
 
-  const carouselBtns = document.querySelector('.heroCarousel-navigation-btn');
+  const nextSlide = () => {
+    setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+  };
+
+  const carouselBtns = document.querySelectorAll('.heroCarousel-navigation-btn');
 
   const activeSlide = (event) => {
     /* slides.classList.add('active');
     carouselBtns.classList.add('active'); */
     console.log('clicked btn')
-    console.log(event.target)
+    console.log(event.target);
+    console.log(event.target.classList.contains('active'));
+
+
+
+    /* Pseodocode:  */
+
+    /* 1) loop through the buttons, */
+    /* 2) on click of the specific event.target, add active class */
+    console.log('Here are my DOM buttons: ', carouselBtns)
     event.target.classList.add('active');
     /* setCurrentSlide() */
   };
 
-  useEffect( () => {
+  /* useEffect( () => {
     document.querySelector('.heroCarousel-navigation-btn').classList.add('active');
     document.querySelector('.heroCarousel-slide').classList.add('active');
-  },[]);
+  },[]); */
 
 
 
@@ -76,9 +93,9 @@ function HeroCarousel( { imgData } ) {
 
         <div className='heroCarousel-navigation'>
 
-          {imgData.map(btn => {
+          {imgData.map( (btn, index) => {
             return (
-              <div className={`heroCarousel-navigation-btn ${btn.buttonId}`} key={btn.buttonId} onClick={event => activeSlide(event)}></div>
+              <div className={index === currentSlide ? 'heroCarousel-navigation-btn active' : 'heroCarousel-navigation-btn'} key={btn.buttonId} /* onClick={event => activeSlide(event)} */ onClick={nextSlide}></div>
             )
           })}
 

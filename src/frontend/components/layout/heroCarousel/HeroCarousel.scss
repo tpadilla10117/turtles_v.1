@@ -23,6 +23,7 @@
 
             &.active {
                 clip-path: circle(100.0% at 0 50%);
+                transition: 2s;
                 transition-property: clip-path;
             }
             
