@@ -1,4 +1,4 @@
-.heroCarousel-parent-container {
+.testimonialCarousel-parent-container {
     display: flex;
   /*   align-items: center;
     justify-content: center; */
@@ -6,7 +6,7 @@
     max-width: 100%;
     max-height: 100%;
 
-    .heroCarousel-img-slider {
+    .testimonialCarousel-img-slider {
         position: relative;
         width: 100%;
         height: 500px;
@@ -26,7 +26,7 @@
             
         }
 
-        .heroCarousel-slide {
+        .testimonialCarousel-slide {
             z-index: 1;
             position: absolute;
             width: 100%;
@@ -51,7 +51,7 @@
                 
             }
 
-            .heroCarousel-info {
+            .testimonialCarousel-info {
                 position: absolute;
                 top: 0;
                 padding: 15px 30px;
@@ -75,7 +75,7 @@
             }
         }
 
-        .heroCarousel-navigation {
+        .testimonialCarousel-navigation {
             z-index: 2;
             position: absolute;
             /* border: 10px solid green; */
@@ -84,7 +84,7 @@
             left: 50%;
             transform: translateX(-50%);
 
-            .heroCarousel-navigation-btn {
+            .testimonialCarousel-navigation-btn {
                 background: rgba(255, 255, 255, 0.5);
                 width: 12px;
                 height: 12px;
@@ -105,14 +105,14 @@
 
 @media (max-width: 820px) {
 
-    .heroCarousel-parent-container {
+    .testimonialCarousel-parent-container {
 
-        .heroCarousel-img-slider {
+        .testimonialCarousel-img-slider {
             /* width: 600px; */
             height: 375px;
 
-            .heroCarousel-slide {
-                .heroCarousel-info {
+            .testimonialCarousel-slide {
+                .testimonialCarousel-info {
                     padding: 10px 25px;
 
                     h2 {
@@ -126,10 +126,10 @@
                 }
             }
 
-            .heroCarousel-navigation {
+            .testimonialCarousel-navigation {
                 bottom: 25px;
 
-                .heroCarousel-navigation-btn {
+                .testimonialCarousel-navigation-btn {
                     width: 10px;
                     height: 10px;
                     margin: 8px;
@@ -141,14 +141,14 @@
 
 @media (max-width: 620px) {
 
-    .heroCarousel-parent-container {
+    .testimonialCarousel-parent-container {
 
-        .heroCarousel-img-slider {
+        .testimonialCarousel-img-slider {
             /* width: 400px; */
             height: 250px;
 
-            .heroCarousel-slide {
-                .heroCarousel-info {
+            .testimonialCarousel-slide {
+                .testimonialCarousel-info {
                     padding: 10px 20px;
 
                     h2 {
@@ -162,10 +162,10 @@
                 }
             }
 
-            .heroCarousel-navigation {
+            .testimonialCarousel-navigation {
                 bottom: 15px;
 
-                .heroCarousel-navigation-btn {
+                .testimonialCarousel-navigation-btn {
                     width: 8px;
                     height: 8px;
                     margin: 6px;
@@ -177,14 +177,14 @@
 
 @media (max-width: 420px) {
 
-    .heroCarousel-parent-container {
+    .testimonialCarousel-parent-container {
 
-        .heroCarousel-img-slider {
+        .testimonialCarousel-img-slider {
             /* width: 400px; */
             height: 200px;
 
-            .heroCarousel-slide {
-                .heroCarousel-info {
+            .testimonialCarousel-slide {
+                .testimonialCarousel-info {
                     padding: 5px 10px;
 
                     h2 {
@@ -198,7 +198,7 @@
                 }
             }
 
-            .heroCarousel-navigation {
+            .testimonialCarousel-navigation {
                 bottom: 10px;
 
             }

@@ -9,7 +9,7 @@ import {
     Footer,
     PhotoGallery,
     TestimonialSection,
-    Carousel
+    TestimonialCarousel
 } from '../../utils.js';
 /* import Placeholder2 from '.././../../assets/images/placeholder2.jpg'; */
 /* import Placeholder1 from '../../../assets/images/placeholder1.jpg'; */
@@ -17,7 +17,7 @@ import TurtlesStudio from '../../../assets/images/turtlesStudio.JPG';
 import TurtlesStudio2 from '../../../assets/images/turtlesStudio2.JPG';
 import EmailPlaceholder from '../../../assets/images/emailplaceholder.jpg';
 import Amanda from '../../../assets/images/Amanda-73.jpeg';
-import { photoGallery } from '../../../seed';
+import { photoGallery, testimonialCarouselData } from '../../../seed';
 
 
 
@@ -50,7 +50,7 @@ const Landing = () => {
       {/* TODO: Testimonials */}
       <TestimonialSection 
         content={
-          <Carousel />
+          <TestimonialCarousel carouselData={testimonialCarouselData} />
         }
       />
 
