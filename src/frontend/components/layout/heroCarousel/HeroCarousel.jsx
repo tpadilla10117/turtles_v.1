@@ -25,6 +25,21 @@ function HeroCarousel( { imgData } ) {
     setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
   };
 
+/* Helper Function that allows user to navigate to exact slide in carousel: */
+  const exactSlide = (index) => {
+    setCurrentSlide(parseInt(index));
+  };
+
+  const navigateDots = event => {
+    //First need to target correct dot at the array index:
+    const arrayValues = event.target.getAttribute('data-key');
+    /* console.log('Here are my dots: ', arrayValues); */
+
+    exactSlide(arrayValues);
+  }
+
+
+
   const carouselBtns = document.querySelectorAll('.heroCarousel-navigation-btn');
 
   const activeSlide = (event) => {
@@ -82,7 +97,7 @@ function HeroCarousel( { imgData } ) {
 
           {imgData.map( (btn, index) => {
             return (
-              <div className={index === currentSlide ? 'heroCarousel-navigation-btn active' : 'heroCarousel-navigation-btn'} key={btn.buttonId} /* onClick={event => activeSlide(event)} */ onClick={nextSlide}></div>
+              <div className={index === currentSlide ? 'heroCarousel-navigation-btn active' : 'heroCarousel-navigation-btn'} key={btn.buttonId} data-key={index} /* onClick={event => activeSlide(event)} */ onClick={navigateDots}></div>
             )
           })}
 
