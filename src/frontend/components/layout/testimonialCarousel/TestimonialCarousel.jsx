@@ -55,6 +55,12 @@ function TestimonialCarousel( {carouselData} ) {
           return (
             <div className={index === currentSlide ? 'testimonialCarousel-slide active' : 'testimonialCarousel-slide'} key={img.id}>
               <img alt={img.alt} src={img.src} />
+
+            {/* TODO: the client img */}
+              <div className='testimonialCarousel-clientimg-parent'>
+                <img alt={img.alt} src={img.src} className='testimonialCarousel-clientimg' />
+              </div>
+
               <div className={`testimonialCarousel-info ${img.id}`}>
               
                 <h2 
@@ -63,6 +69,13 @@ function TestimonialCarousel( {carouselData} ) {
                 >
                   {img.title}
                 </h2>
+
+                <h3
+                  className={`testimonialCarousel-subtitle 
+                  ${img.subtitle}`}
+                >
+                  {img.subtitle}
+                </h3>
 
                 <p 
                   className={`testimonialCarousel-caption ${img.id}`}

@@ -179,8 +179,9 @@ export const heroCarouselData = [
 export const testimonialCarouselData = [
     {
         src: TurtlesStudio,
-        title: 'Amanda',
-        caption: 'Turtles Swinging in the studio',
+        title: 'Kianna B.',
+        subtitle: 'Student',
+        caption: 'Turtles really is an amazing talent & teacher.  I have learned so much from here and would not be where I am today without her',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
         buttonId: 1,
@@ -189,6 +190,7 @@ export const testimonialCarouselData = [
     {
         src: Amanda3,
         title: 'Focused',
+        subtitle: 'Student',
         caption: 'Turtles getting her stretch on...',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
@@ -198,6 +200,7 @@ export const testimonialCarouselData = [
     {
         src: TurtlesStudio2,
         title: 'Amanda',
+        subtitle: 'Student',
         caption: 'Turtles Swinging in the studio',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
