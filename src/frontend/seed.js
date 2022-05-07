@@ -7,7 +7,8 @@ import CollectionsRoundedIcon from '@mui/icons-material/CollectionsRounded';
 import TurtlesStudio from './assets/images/turtlesStudio.JPG';
 import TurtlesStudio2 from './assets/images/turtlesStudio2.JPG';
 import Amanda from './assets/images/Amanda-73.jpeg';
-import Amanda2 from './assets/images/Amanda-62.jpeg';
+import Amanda2 from './assets/images/Amanda-46.jpeg';
+import Amanda3 from './assets/images/Amanda-67.jpeg';
 
 export const photoGallery = [
     {
@@ -146,16 +147,16 @@ export const heroCarouselData = [
         id: 1
     },
     {
-        src: TurtlesStudio2,
-        title: 'Amanda',
-        caption: 'Turtles Swinging in the studio',
+        src: Amanda3,
+        title: 'Focused',
+        caption: 'Turtles getting her stretch on...',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
         buttonId: 2,
         id: 2
     },
     {
-        src: Amanda,
+        src: TurtlesStudio2,
         title: 'Amanda',
         caption: 'Turtles Swinging in the studio',
         alt: 'Turtles Swinging in the studio',

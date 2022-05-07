@@ -13,17 +13,17 @@ function HeroCarousel( { imgData } ) {
   const slideLength = imgData.length;
 
 /* Function to automatically update the carousel after a designated time with setTimeout, a DOM method: */
-  useEffect( () => {
+  /* useEffect( () => {
     const time = setTimeout( () => {
       setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)  
-    }, 7000);
+    }, 10000);
 
-  /* Effect cleanup: */
+
     return () => {
       clearTimeout(time);
     }
   }, [currentSlide, slideLength]);
-
+ */
 
 /* Functions for Arrow Buttons if Requested by Client: */
 
