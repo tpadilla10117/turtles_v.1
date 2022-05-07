@@ -12,18 +12,30 @@ function HeroCarousel( { imgData } ) {
   let [ currentSlide, setCurrentSlide ] = useState(0);
   const slideLength = imgData.length;
 
-  console.log('Here is my imgData array: ', imgData);
-  console.log('Here is my imgData array: ', slideLength);
+/* Function to automatically update the carousel after a designated time with setTimeout, a DOM method: */
+  useEffect( () => {
+    const time = setTimeout( () => {
+      setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)  
+    }, 7000);
 
-  const slides = document.querySelector('.heroCarousel-slide');
+  /* Effect cleanup: */
+    return () => {
+      clearTimeout(time);
+    }
+  }, [currentSlide, slideLength]);
 
-  const nextSlide = () => {
+
+/* Functions for Arrow Buttons if Requested by Client: */
+
+  /* const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
   };
 
   const previousSlide = () => {
     setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-  };
+  }; */
+
+
 
 /* Helper Function that allows user to navigate to exact slide in carousel: */
   const exactSlide = (index) => {
@@ -37,34 +49,6 @@ function HeroCarousel( { imgData } ) {
 
     exactSlide(arrayValues);
   }
-
-
-
-  const carouselBtns = document.querySelectorAll('.heroCarousel-navigation-btn');
-
-  const activeSlide = (event) => {
-    /* slides.classList.add('active');
-    carouselBtns.classList.add('active'); */
-    console.log('clicked btn')
-    console.log(event.target);
-    console.log(event.target.classList.contains('active'));
-
-
-
-    /* Pseodocode:  */
-
-    /* 1) loop through the buttons, */
-    /* 2) on click of the specific event.target, add active class */
-    console.log('Here are my DOM buttons: ', carouselBtns)
-    event.target.classList.add('active');
-    /* setCurrentSlide() */
-  };
-
-  /* useEffect( () => {
-    document.querySelector('.heroCarousel-navigation-btn').classList.add('active');
-    document.querySelector('.heroCarousel-slide').classList.add('active');
-  },[]); */
-
 
   return (
     <section className='heroCarousel-parent-container'>
