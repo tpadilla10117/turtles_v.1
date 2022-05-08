@@ -54,7 +54,7 @@ function TestimonialCarousel( {carouselData} ) {
         {carouselData.map( (img, index) => {
           return (
             <div className={index === currentSlide ? 'testimonialCarousel-slide active' : 'testimonialCarousel-slide'} key={img.id}>
-              <img alt={img.alt} src={img.src} />
+              {/* <img alt={img.alt} src={img.src} /> */}
 
             {/* TODO: the client img */}
               <div className='testimonialCarousel-clientimg-parent'>
@@ -82,6 +82,8 @@ function TestimonialCarousel( {carouselData} ) {
                 >
                   {img.caption}
                 </p>
+
+                {/* <hr></hr> */}
 
               </div>
             </div>
