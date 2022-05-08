@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function TestimonialCarousel( {carouselData} ) {
 
@@ -26,13 +28,14 @@ function TestimonialCarousel( {carouselData} ) {
 
 /* Functions for Arrow Buttons if Requested by Client: */
 
-  /* const nextSlide = () => {
+  const nextSlide = () => {
     setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+    console.log('cliecked')
   };
 
   const previousSlide = () => {
     setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-  }; */
+  };
 
 
 
@@ -50,6 +53,14 @@ function TestimonialCarousel( {carouselData} ) {
   }
   return (
     <section className='testimonialCarousel-parent-container'>
+      <ArrowForwardIosIcon className='testimonialCarousel-forwardarrow'
+        onClick={nextSlide}
+      />
+
+      <ArrowBackIosNewIcon className='testimonialCarousel-backarrow'
+        onClick={previousSlide}
+      />
+      
       <div className='testimonialCarousel-img-slider'>
         {carouselData.map( (img, index) => {
           return (
