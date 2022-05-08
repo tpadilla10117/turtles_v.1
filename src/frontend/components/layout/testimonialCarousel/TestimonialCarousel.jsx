@@ -58,7 +58,7 @@ function TestimonialCarousel( {carouselData} ) {
 
             {/* TODO: the client img */}
               <div className='testimonialCarousel-clientimg-parent'>
-                <img alt={img.alt} src={img.src} className='testimonialCarousel-clientimg' />
+                <img alt={img.alt} src={img.clientimg} className='testimonialCarousel-clientimg' />
               </div>
 
               <div className={`testimonialCarousel-info ${img.id}`}>

@@ -42,12 +42,14 @@
             }
 /* TODO: client img section */
             .testimonialCarousel-clientimg-parent {
-                border: 1px solid yellow;
-                border-radius: 50px;
+                border: 2px solid #fff;
+                border-radius: 50%;
                 position: absolute;
-                top: 0;
-                right :0;
-                height: 25%;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 200px;
+                width: 200px;
                 /* position: relative; */
                 
 
@@ -58,6 +60,7 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
+                border-radius: 50%;
                 }
             }
 

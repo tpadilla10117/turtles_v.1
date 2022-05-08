@@ -9,6 +9,9 @@ import TurtlesStudio2 from './assets/images/turtlesStudio2.JPG';
 import Amanda from './assets/images/Amanda-73.jpeg';
 import Amanda2 from './assets/images/Amanda-46.jpeg';
 import Amanda3 from './assets/images/Amanda-67.jpeg';
+import Testimonial1 from './assets/images/testimonial1.jpg';
+import Testimonial2 from './assets/images/testtimonial2.jpg';
+import Testimonial3 from './assets/images/testimonial3.jpg';
 
 export const photoGallery = [
     {
@@ -180,6 +183,7 @@ export const testimonialCarouselData = [
     {
         src: TurtlesStudio,
         title: 'Kianna B.',
+        clientimg: Testimonial1,
         subtitle: 'Student',
         caption: 'Turtles really is an amazing talent & teacher.  I have learned so much from here and would not be where I am today without her',
         alt: 'Turtles Swinging in the studio',
@@ -189,7 +193,8 @@ export const testimonialCarouselData = [
     },
     {
         src: Amanda3,
-        title: 'Focused',
+        title: 'Jilian C.',
+        clientimg: Testimonial2,
         subtitle: 'Student',
         caption: 'Turtles getting her stretch on...',
         alt: 'Turtles Swinging in the studio',
@@ -199,9 +204,10 @@ export const testimonialCarouselData = [
     },
     {
         src: TurtlesStudio2,
-        title: 'Amanda',
+        title: 'Jade Z.',
+        clientimg: Testimonial3,
         subtitle: 'Student',
-        caption: 'Turtles Swinging in the studio',
+        caption: 'Turtles is an amazing instructor.  I highly recommend learning from her',
         alt: 'Turtles Swinging in the studio',
         thumbnail: 'Turtles Swinging in the studio',
         buttonId: 3,
