@@ -11,6 +11,7 @@ function LandingImgSection( { text, img } ) {
       - This is the equivalent to using a useRef hook
 
     3) Create a variable that references the Intersection Observer's 'options' argument.  You pass this in to the useInView() as -> useInView(options)
+      - **I cache the data with the useMemo() hook
 
       - options comprises of:
         1) threshold
@@ -27,7 +28,7 @@ function LandingImgSection( { text, img } ) {
     rootMargin: '0px 0px -100px 0px',
     triggerOnce: true
   }
- }, [])
+ }, []);
   
   const { ref: headingRef, inView: isVisible, }= useInView(insersectionOptions);
 
