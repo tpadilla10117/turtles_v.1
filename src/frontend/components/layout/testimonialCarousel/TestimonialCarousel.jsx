@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, /* useEffect, useMemo */ } from 'react';
+/* import { useInView } from 'react-intersection-observer'; */
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
@@ -51,6 +52,21 @@ function TestimonialCarousel( {carouselData} ) {
 
     exactSlide(arrayValues);
   }
+
+/* Intersection Observer Logic:
+ */
+ /*  const insersectionOptions = useMemo( ()=> {
+    return {
+      threshold: 1,
+      root: null, 
+      rootMargin: '0px 0px 00px 0px',
+      triggerOnce: true
+    }
+   }, []);
+    
+    const { ref: clientImgRef, inView: isVisible, }= useInView(insersectionOptions); */
+
+
   return (
     <section className='testimonialCarousel-parent-container'>
       <ArrowForwardIosIcon className='testimonialCarousel-forwardarrow'
@@ -68,7 +84,7 @@ function TestimonialCarousel( {carouselData} ) {
               {/* <img alt={img.alt} src={img.src} /> */}
 
             {/* TODO: the client img */}
-              <div className='testimonialCarousel-clientimg-parent'>
+              <div className='testimonialCarousel-clientimg-parent' /* ref={clientImgRef} */>
                 <img alt={img.alt} src={img.clientimg} className='testimonialCarousel-clientimg' />
               </div>
 

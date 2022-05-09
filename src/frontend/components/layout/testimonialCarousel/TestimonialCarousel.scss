@@ -32,6 +32,9 @@
     .testimonialCarousel-backarrow {
 
         transition: all 250ms ease-in-out;
+        filter: drop-shadow(0px 4px 4px rgb(0 0 0 / 50%) );
+        /* filter for Material UI SVGs */
+        
 
         &:hover {
             cursor: pointer;
@@ -89,6 +92,23 @@
                 transform: translate(-50%, -50%);
                 height: 150px;
                 width: 150px;
+                /* animation-name: rotateIn;
+                transform-origin: center;
+                animation-duration: 3s;
+
+                &.rotateIn {
+                    @keyframes rotateIn {
+                        from {
+                          transform: rotate3d(0, 0, 1, -200deg);
+                          opacity: 0;
+                        }
+                      
+                        to {
+                          transform: translate3d(0, 0, 0);
+                          opacity: 1;
+                        }
+                      }
+                } */
                 
 
                 .testimonialCarousel-clientimg {

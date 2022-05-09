@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react';
 import { useInView } from 'react-intersection-observer';
 
-function InfoSection( {ptext, ptext2, ptext3, headingtxt, infoSectionClassName} ) {
+function InfoSection( {ptext, ptext2, ptext3, headingtxt, infoSectionClassName, infoSectionImg, alt, content } ) {
 
 
   const insersectionOptions = useMemo( ()=> {
@@ -70,8 +70,17 @@ function InfoSection( {ptext, ptext2, ptext3, headingtxt, infoSectionClassName} 
           { isVisible3 ? ptext3 : ''}
             {/* {ptext3} */}
           </p>
+
+      {/* TODO: Where I render a CTA contact button: */}
+          {content ? content : ''}
           
         </div>
+
+      {/* TODO: add in an image to be on the side */}
+        <div className='infoSection-img-parent'>
+          <img src={infoSectionImg} alt={alt} className='infoSection-img' />
+        </div>
+
     </section>
   )
 }
