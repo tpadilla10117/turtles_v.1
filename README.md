@@ -33,8 +33,14 @@
 
 ### `npm i react-scroll`
 
+- React implementation of Intersection Observer API to tell you when an element enters or leaves the viewport.  
+- (https://www.npmjs.com/package/react-intersection-observer)
+
+### `npm i react-intersection-observer`
+
 - React component for animating vertical scrolling
 - (https://www.npmjs.com/package/react-scroll)
+- (https://react-intersection-observer.vercel.app/?path=/docs/useinview-hook--trigger-once)
 
 ### `npm install @mui/material @emotion/react @emotion/styled`
 ### `npm install @mui/icons-material`

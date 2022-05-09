@@ -26,6 +26,21 @@
                 font-size: $heading-primary;
                 font-family: $header-secondaryfont;
             }
+
+            .fade-in {
+                animation: fadeIn;
+        animation-duration: 2s;
+
+        @keyframes fadeIn {
+            from {
+            opacity: 0;
+            }
+        
+            to {
+            opacity: 1;
+            }
+        }
+            }
             
         }
         .landingImgSection-img {

@@ -27,3 +27,20 @@
         <!-- TODO: Onclick of links, the component does not disappear -->
 
     
+
+<!-- MISC Processes: -->
+    <!-- Intersection Observers with react-intersection-observer: -->
+    /*  1) Import the useInView() component from react-intersection-observer
+
+        2) Add a ref to a DOM element (e.g. ref=headingRef ) 
+        - This is the equivalent to using a useRef hook
+
+        3) Create a variable that references the Intersection Observer's 'options' argument.  You pass this in to the useInView() as -> useInView(options)
+
+        - options comprises of:
+            1) threshold
+            2) root
+            3) rootMargin
+            4) triggerOnce: true //only fires once
+    
+        */
