@@ -90,13 +90,38 @@
                 height: 12px;
                 margin: 10px;
                 border-radius: 50%;
+                border: .5px solid #fff;
                 cursor: pointer;
                 /* clip-path: circle(100% at 0 50%); */
 
                 &.active {
                     background: $text-primary;
                     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-                    
+                    /* clip-path: circle(200% at 100% 100%);
+                    transition: 1.5s;
+                    transition-property: clip-path; */
+                    animation: ripple;
+                    animation-duration: .7s;
+                    border: none;
+                    /* transition: 250ms opacity ease-in-out; */
+
+
+                    @keyframes ripple {
+                        from {
+                            transform: scale(0);
+                            opacity: 1;
+                        }
+                        to {
+                            transform: scale(4);
+                            opacity: 0;
+                        }
+                    }
+    
+                }
+
+                &:hover {
+                    background: $text-primary;
+                    transition: .5s ease-in-out;
                 }
             }
         }
