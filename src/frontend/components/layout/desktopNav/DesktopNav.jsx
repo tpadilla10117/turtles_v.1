@@ -15,19 +15,11 @@ const DesktopNav = (props) => {
                         to={item.path}
                         className='desktopNav-nav-item'
                         exact="true"
-                        activeclassname='active'
-                        style={ {textDecoration: 'none'}}
+                        /* activeclassname='active' */
                         key={index}
+                        id={item.id}
                     >
-                        <ul>
-                            <li
-                                key={index}
-                                className={item.title}
-                                id='navlinks'
-                            >
-                                <span>{item.title}</span>
-                            </li>
-                        </ul>
+                        {item.title}
                     </NavLink>
                 )
             })}
