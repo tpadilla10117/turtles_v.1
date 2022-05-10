@@ -82,7 +82,26 @@
         background-color: rgba(0,0,0,.8);
         /* align-items: center;
         justify-content: center; */
-        
+
+        &.fadeOut {
+            animation-name: fadeOut;
+            animation-duration: 1s;
+
+            @keyframes fadeOut {
+                from {
+                  opacity: 1;
+                }
+              
+                to {
+                  opacity: 0;
+                }
+              }
+          }
+
+
+        &.active {
+            display: flex;
+        }
 
         .modal-close {
             color: white; //TODO: change
@@ -115,7 +134,7 @@
                 display: none;
                 /* position: absolute; */
                 opacity: 0;
-                transition: 250ms opacity ease-in-out;
+                transition: .8s opacity ease-in-out;
                 transition-delay: 200ms;
 
                 &.active {
