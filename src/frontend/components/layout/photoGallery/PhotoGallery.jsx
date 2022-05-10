@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import {
     CtaButton,
     InfoSection
@@ -8,6 +8,7 @@ import {
 function PhotoGallery( { photos } ) {
 
     let slideIndex = 1;
+    const modalReference = useRef(null);
 
     const openModal = () => {
         console.log('clicked an img to open')
@@ -18,6 +19,23 @@ function PhotoGallery( { photos } ) {
     const closeModal = () => {
         document.getElementById('gallery-modal-parent').style.display = 'none';
     };
+
+/* When user clicks outside of modal, close it: */
+    useEffect( () => {
+        function handleClick(e) {
+            if(!modalReference.current?.contains(e.target)) {
+                console.log(e.target)
+            } else if(e.target === document.querySelector('.gallery-modal-parent')) {
+                console.log('clicked outside')
+                closeModal();
+            }
+        }
+        
+        document.addEventListener("click", handleClick);
+
+        return () => document.removeEventListener("click", handleClick)
+    }, );
+
 
     function showSlides(n) {
         let i;
@@ -92,12 +110,16 @@ function PhotoGallery( { photos } ) {
                 classnames={'gallery-btn'}
             />
 
-            <div id='gallery-modal-parent' className='gallery-modal-parent'>
+            <div id='gallery-modal-parent' className='gallery-modal-parent'
+            ref={modalReference}
+            >
                 <span className='modal-close cursor'
                     onClick={closeModal}
                 >
                     X
                 </span>
+
+            {/* TODO: This is the Gallery's Modal: */}
                 <div className='gallery-modal-content'>
                     {photos.map( mySlides => {
                         return (
@@ -106,7 +128,9 @@ function PhotoGallery( { photos } ) {
                                 >
                                     {mySlides.id} / 4
                                 </div>
-                                <img src={mySlides.src} alt={mySlides.id} className='modal-img'/>
+                                <img src={mySlides.src} alt={mySlides.id} className='modal-img'
+                                
+                                />
                             </div>
                         )
                     })}
