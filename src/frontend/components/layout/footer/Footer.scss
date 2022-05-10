@@ -2,6 +2,10 @@
 .footer-parent-container {
     background-color: $background-primary;
     
+    @media screen and (min-width: 760px) {
+        height: 500px;
+
+    }
     
 
     .footer-wrapper {
