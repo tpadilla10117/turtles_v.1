@@ -84,7 +84,7 @@ function TestimonialCarousel( {carouselData} ) {
               {/* <img alt={img.alt} src={img.src} /> */}
 
             {/* TODO: the client img */}
-              <div className='testimonialCarousel-clientimg-parent' /* ref={clientImgRef} */>
+              <div className={index === currentSlide ? 'testimonialCarousel-clientimg-parent active fadeInUp' : 'testimonialCarousel-clientimg-parent'} /* ref={clientImgRef} */>
                 <img alt={img.alt} src={img.clientimg} className='testimonialCarousel-clientimg' />
               </div>
 

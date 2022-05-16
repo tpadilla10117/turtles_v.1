@@ -1,5 +1,4 @@
-import React from 'react'
-/* import Placeholder1 from '../../../assets/images/placeholder1.jpg'; */
+import React from 'react';
 import AmandaFlex from '../../../assets/images/Amanda-62.jpeg';
 import { CtaButton } from '../../utils';
 
