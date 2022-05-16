@@ -6,14 +6,11 @@
 
     - SEO Insights: https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.tpadilla.com%2F
 
+
 <!-- Stack: -->
     - Frontend: SCSS, React.js
 
 <!-- Layout Components: -->
-
-    Footer,jsx - 
-        <!-- TODO: Responsive Design -->
-
     
 
 
@@ -21,6 +18,7 @@
     Landing.js -
         TODO: General layout components
         TODO: Slide-in / fade effects on scroll
+        TODO: About section on desktop needs to be split like welcome section
 
     Sidebar.jsx -
         <!-- TODO: Styling -->
@@ -44,3 +42,10 @@
             4) triggerOnce: true //only fires once
     
         */
+
+    BreakPoints:
+
+        - 420 px - max width
+        - 760 px - max width
+        - 1024 px - max width
+        - 1300 px ? 

@@ -3,8 +3,8 @@
     background-color: $background-primary;
     
     @media screen and (min-width: 760px) {
-        height: 500px;
-
+        /* height: 500px; */
+        height: 100%;
     }
     
 
@@ -33,7 +33,7 @@
                     font-family: $paragraph-lightfont;
                     
                     @media screen and (min-width: 760px) {
-                        justify-content: space-around;
+                        justify-content: center;
                 
                     }
                     
@@ -55,6 +55,11 @@
                             color: $text-primary;
                             transition: 0.3s ease-out;
                             opacity: 1;
+                        }
+
+                        @media screen and (min-width: 760px) {
+                            padding: 1rem;
+                    
                         }
                     }
                 }
@@ -111,8 +116,10 @@
                         justify-content: center;
                         /* border: 1px solid red; */
                         position: absolute;
-                        top: 45%;
-                        left: 46%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
                         
                     }
                     
@@ -140,6 +147,7 @@
                     @media screen and (min-width: 760px) {
                         justify-content: center;
                         /* border: 1px solid red; */
+                        
                     }
                 }
             }
