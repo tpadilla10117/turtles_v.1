@@ -119,6 +119,7 @@ function PhotoGallery( { photos } ) {
                 classnames={'gallery-btn'}
             />
 
+        {/* TODO: This is the Modal's 'X' Button: */}
             <div id='gallery-modal-parent' className='gallery-modal-parent'
             ref={modalReference}
             >

@@ -6,23 +6,14 @@
     flex-direction: column;
 
     .gallery-row {
-        /* display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
- */
-        /* &:after {
-            content: '';
-            display: table;
-            clear: both;
-        } */
 
         display: grid;
         grid-template-columns: repeat(2, 180px);
         justify-content: center;
-        align-content: center;
+        /* align-content: center; */
         grid-gap: 15px;
         height: 100%;
-        margin: 20px 0 20px 0;
+        /* margin: 20px 0 20px 0; */
 
       /*   .gallery-column {
             
@@ -50,25 +41,9 @@
                 transform: scale(1.05);
                 cursor: pointer;
             }
-
-        /* } */
-
-        /* @media screen and (max-width: 600px) {
-            .gallery-column {
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-            .gallery-column {
-              flex: 50%;
-              max-width: 50%;
-            }
-          } */
     }
 
-
+/* TODO: Below are all Modal styles: */
     .gallery-modal-parent {
         display: none;
         position: fixed;
