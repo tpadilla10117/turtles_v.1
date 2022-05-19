@@ -17,6 +17,7 @@ function PhotoGallery( { photos } ) {
         document.getElementById('gallery-modal-parent').classList.remove('fadeOut');
         
         showSlides(slideIndex)
+        console.log('HEre is my slideIndex: ', slideIndex)
     };
 
     const closeModal = () => {
