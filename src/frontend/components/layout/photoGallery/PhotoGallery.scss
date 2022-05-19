@@ -13,14 +13,11 @@
         /* align-content: center; */
         grid-gap: 15px;
         height: 100%;
-        /* margin: 20px 0 20px 0; */
+        margin: 20px 0 20px 0;
 
             img {
-                /* width: 238px; */
                 width: 100%;
-                /* max-width: 25%; */
-                vertical-align: middle;
-                /* padding: 5px; */
+                /* vertical-align: middle; */
                 filter: grayscale(100%);
                 transition: 1s;
                 height: 200px;
