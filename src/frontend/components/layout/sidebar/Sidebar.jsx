@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { NavLink } from 'react-router-dom';
 import { NavbarData } from '../../../seed';
@@ -10,11 +10,12 @@ import "../../App.scss";
 
 const Sidebar = (props) => {
 
-    const { isOpen, navToggle } = props
+    const { isOpen, navToggle } = props;
+    const nodeRef = React.useRef(null);
 
     return (
-        <CSSTransition in={isOpen} timeout={300} unmountOnExit onEnter={ () => navToggle} onExited={ () => navToggle} classNames="sidebar-transition">
-            <nav className='sidebar-parent-container'>
+        <CSSTransition in={isOpen} timeout={300} unmountOnExit onEnter={ () => navToggle} onExited={ () => navToggle} classNames="sidebar-transition" nodeRef={nodeRef}>
+            <nav className='sidebar-parent-container' ref={nodeRef}>
                 <div className='sidebar-icon-container' onClick={navToggle}>
                     <CloseRoundedIcon />
                 </div>
