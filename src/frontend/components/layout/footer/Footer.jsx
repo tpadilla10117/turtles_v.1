@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavbarData } from '../../../seed';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+/* import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import InstagramIcon from '@mui/icons-material/Instagram'; */
 import SampleLogo from '../../../assets/icons/SampleLogo.png';
 
 function Footer() {
