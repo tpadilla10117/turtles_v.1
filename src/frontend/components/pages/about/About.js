@@ -14,13 +14,14 @@ function About() {
         {/* Greetings from About */}
         <HeroCarousel imgData={heroCarouselData} />
         <InfoSection 
-          ptext={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. '}
-          ptext2={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} 
-          ptext3={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
+          ptext={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'}
+          ptext2={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'} 
+          ptext3={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'}
           headingtxt={'Welcome to...'}
-          infoSectionClassName={'infoSection-parent-container'}
+          infoSectionClassName={'aboutpg-infoSection-parent-container'}
           infoSectionImg={AmandaSmiling}
           alt={'Somne sample text'}
+          infoSectionTxtWrapperClassName={'aboutpg-infoSection-txt-parent-container'}
         
         />
         <Footer />

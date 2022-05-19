@@ -13,17 +13,17 @@ function HeroCarousel( { imgData } ) {
   const slideLength = imgData.length;
 
 /* Function to automatically update the carousel after a designated time with setTimeout, a DOM method: */
-  /* useEffect( () => {
+  useEffect( () => {
     const time = setTimeout( () => {
       setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)  
-    }, 10000);
+    }, 6000);
 
 
     return () => {
       clearTimeout(time);
     }
   }, [currentSlide, slideLength]);
- */
+
 
 /* Functions for Arrow Buttons if Requested by Client: */
 
@@ -45,8 +45,6 @@ function HeroCarousel( { imgData } ) {
   const navigateDots = event => {
     //First need to target correct dot at the array index:
     const arrayValues = event.target.getAttribute('data-key');
-    /* console.log('Here are my dots: ', arrayValues); */
-
     exactSlide(arrayValues);
   }
 

@@ -1,0 +1,232 @@
+.aboutpg-parent-container {
+
+    .aboutpg-infoSection-parent-container {
+        width: 100%;
+        height: 100%;
+        background-color: $background-complement;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 50px;
+
+        @media screen and (min-width: 760px) {
+           display: flex;
+           flex-direction: row;
+        
+        }
+    
+        @media screen and (min-width: 1024px) {
+            height: 100%;
+            
+        }
+
+        .aboutpg-infoSection-txt-parent-container {
+            /* border: 1px solid green; */
+            padding: 2rem;
+            
+        }
+
+        .infoSection-img-parent {
+            display: none;
+            /* filter: drop-shadow(0px 4px 4px rgb(0 0 0 / 50%) ); */
+    
+            @media screen and (min-width: 760px) {
+                display: block;
+                width: 100%;
+                height: 100%;
+                
+                /* position: relative; */
+                
+            }
+    
+            .infoSection-img {
+                @media screen and (min-width: 760px) {
+                    display: block;
+                   /* border: 1px solid yellow; */
+                   object-fit: cover;
+                   object-position: center;
+                   width: 100%;
+                   position: relative;
+                   height: 650px;
+                   border-radius: 5px;
+                   
+                }
+            }
+
+        }
+
+        .infoSection-img-parent.slide-in {
+            animation: fadeInRight;
+            animation-duration: 1s;
+        /* animation-delay: .5s; */
+    
+            @keyframes fadeInRight {
+                from {
+                opacity: 0;
+                transform: translate3d(100%, 0%, 0);
+                }
+            
+                to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            position: relative;
+            /* border: 1px solid green; */
+            /* align-self: center; */
+            /* margin-top: 5px; */
+    
+            @media screen and (min-width: 760px) {
+                /* border: 1px solid green; */
+                /* display: flex;
+                flex-direction: column;
+                justify-content: center; */
+                
+            }
+    
+            h1 {
+                font-weight: 700;
+                font-family: $header-primaryfont;
+                font-size: $heading-primary;
+                color: $text-primary;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin-bottom: 40px;
+    
+                @media screen and (min-width: 760px) {
+                    margin-bottom: 20px;
+                    
+                }
+    
+                @media screen and (min-width: 1024px) {
+                    font-size: 40px;
+                    margin-bottom: 50px;
+                    
+                }
+                @media screen and (min-width: 1366px) {
+                    font-size: 50px;
+                    
+                }
+                
+            }
+    
+            .infoSection-h1.fadeInUp {
+                animation: fadeInUp;
+                animation-duration: 1s;
+                /* animation-delay: .5s; */
+            
+                    @keyframes fadeInUp {
+                        from {
+                        opacity: 0;
+                        transform: translate3d(0, 100%, 0);
+                        }
+                    
+                        to {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                        }
+                    }
+            }
+            
+    
+            p {
+                color: $text-primary;
+                font-family: $paragraph-lightfont;
+                font-weight: 400;
+                font-size: $paragraph-primary;
+                text-align: left;
+    
+                @media screen and (min-width: 760px) {
+                    font-size: 12px;
+                    
+                }
+    
+                @media screen and (min-width: 1024px) {
+                    font-size: 16px;
+                    
+                }
+                @media screen and (min-width: 1366px) {
+                    font-size: 20px;
+                    
+                }
+            }
+    
+    
+            /* .infoSection-p1, .infoSection-p2 {
+                opacity: 0;
+    
+                &.active {
+                    opacity: 1;
+                }
+            } */
+    
+    
+            .infoSection-p1.fadeInUp {
+                animation: fadeInUp;
+                animation-duration: 1s;
+                /* animation-delay: .5s; */
+            
+                    @keyframes fadeInUp {
+                        from {
+                        opacity: 0;
+                        transform: translate3d(0, 100%, 0);
+                        }
+                    
+                        to {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                        }
+                    }
+            }
+    
+            .infoSection-p2.fadeInUp {
+                animation: fadeInUp;
+                animation-duration: 1s;
+                /* animation-delay: 1s; */
+            
+                    @keyframes fadeInUp {
+                        from {
+                        opacity: 0;
+                        transform: translate3d(0, 100%, 0);
+                        }
+                    
+                        to {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                        }
+                    }
+            }
+            .infoSection-p3.fadeInUp {
+                animation: fadeInUp;
+                animation-duration: 1s;
+                /* animation-delay: 1s; */
+            
+                    @keyframes fadeInUp {
+                        from {
+                        opacity: 0;
+                        transform: translate3d(0, 100%, 0);
+                        }
+                    
+                        to {
+                        opacity: 1;
+                        transform: translate3d(0, 0, 0);
+                        }
+                    }
+            }
+    
+            .infoSection-contact-btn {
+                position: absolute;
+                top: 95%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+}
