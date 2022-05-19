@@ -11,7 +11,7 @@ import "../../App.scss";
 const Sidebar = (props) => {
 
     const { isOpen, navToggle } = props;
-    const nodeRef = React.useRef(null);
+    const nodeRef = useRef(null);
 
     return (
         <CSSTransition in={isOpen} timeout={300} unmountOnExit onEnter={ () => navToggle} onExited={ () => navToggle} classNames="sidebar-transition" nodeRef={nodeRef}>
