@@ -9,17 +9,12 @@
 
         display: grid;
         grid-template-columns: repeat(2, 180px);
-        justify-content: center;
+        /* justify-content: center; */
         /* align-content: center; */
         grid-gap: 15px;
         height: 100%;
         /* margin: 20px 0 20px 0; */
 
-      /*   .gallery-column {
-            
-            float: left;
-            width: 25%;
- */
             img {
                 /* width: 238px; */
                 width: 100%;
