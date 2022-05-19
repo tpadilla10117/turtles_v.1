@@ -13,10 +13,14 @@ function PhotoGallery( { photos } ) {
     const openModal = (event) => {
         document.getElementById('gallery-modal-parent').classList.add('active');
         document.getElementById('gallery-modal-parent').classList.remove('fadeOut');
+ dev
 
         const arrayValues = event.target.getAttribute('data-key');
 
         currentSlide(Number(arrayValues ) + 1)
+
+        
+       
     };
 
     const closeModal = () => {
