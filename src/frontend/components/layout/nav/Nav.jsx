@@ -31,9 +31,6 @@ const Nav = (props) => {
         }
     };
 
-    console.log(window.scrollY);
-
-
     useEffect(() => {
         window.addEventListener('scroll', changeNav);
 
@@ -67,7 +64,7 @@ const Nav = (props) => {
             })}
         </div>
 
-        {/* TODO: For the mobile Icon */}
+    {/* For the mobile Icon */}
         <div className='nav-mobile-icon-container'>
            
             <svg xmlns="http://www.w3.org/2000/svg" className="nav-mobile-icon" fill="none" height="24" width="24" viewBox="0 0 24 24" stroke="#FFF" onClick={navToggle} alt="A three-lined horizontal icon to toggle a navigation menu">
