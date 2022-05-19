@@ -23,10 +23,6 @@ import { photoGallery, testimonialCarouselData } from '../../../seed';
 const Landing = () => {
     const [ text ] = useState('"Lorem ipsum dolor sit amet"');
     const [ emailFormAltTxt ] = useState('A banner')
-    const Photos = [
-      Amanda, TurtlesStudio
-    ]
-    const [isOpen, setIsOpen] = useState(false)
 
   return (
     <section className='landing-parent-container'>
@@ -38,7 +34,6 @@ const Landing = () => {
         ptext3={'"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
         headingtxt={'Welcome to...'}
         infoSectionClassName={'infoSection-parent-container'}
-      /* TODO: need to update */
         infoSectionImg={Amanda}
         alt={'Somne sample text'}
 
@@ -54,19 +49,16 @@ const Landing = () => {
       
       <LandingImgSection text={text} img={TurtlesStudio2} />
 
-      {/* TODO: Gallery Section */}
       <PhotoGallery photos={photoGallery} />
 
       <LandingImgSection text={text} img={TurtlesStudio} />
 
-      {/* TODO: Testimonials */}
       <TestimonialSection 
         content={
           <TestimonialCarousel carouselData={testimonialCarouselData} />
         }
       />
 
-      {/* TODO: Contact Section */}
       <EmailSection 
         content={<EmailForm 
             bannerImg={Amanda} 

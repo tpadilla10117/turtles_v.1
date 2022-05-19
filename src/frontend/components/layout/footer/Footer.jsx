@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { NavbarData } from '../../../seed';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import SampleLogo from '../../../assets/icons/SampleLogo.png';
 
 function Footer() {
   return (
@@ -10,9 +11,6 @@ function Footer() {
             <div className='footer-links-container'>
                 <div className='footer-links-wrapper'>
                     <div className='footer-links-items'>
-                        {/* <NavLink className='footer-link' to='/' activeclassname='active'>
-                            Home
-                        </NavLink> */}
 
                         {NavbarData.map( footerlinks => {
                             return (
@@ -37,6 +35,15 @@ function Footer() {
                 <h1>TURTLES</h1>
                 <p>Aerialist. Performer</p>
             </div>
+
+            <NavLink
+            to={'/'}
+            exact="true"
+            className='footer-img'
+            >
+            <img src={SampleLogo} alt="The logo for Turtles" className="desktopNav-img" />
+            </NavLink>
+
 
 
             <div className='footer-socialmedia-parent-container'>

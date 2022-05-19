@@ -1,4 +1,4 @@
-import React, { useState, /* useEffect, useMemo */ } from 'react';
+import React, { useState, useEffect } from 'react';
 /* import { useInView } from 'react-intersection-observer'; */
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -7,7 +7,7 @@ function TestimonialCarousel( {carouselData} ) {
 
   /* CAROUSEL LOGIC: */
 
-  //Using the carouselData index to matach against the number from currentSlide
+  //Using the carouselData index to match against the number from currentSlide
   //If there's a match, the DOM elements (slide, buttons), get an 'active' class
   // Else, they get their normal names (**SEE TERNARY IN DOM ELEMENTS**)
 
@@ -15,17 +15,17 @@ function TestimonialCarousel( {carouselData} ) {
   const slideLength = carouselData.length;
 
 /* Function to automatically update the carousel after a designated time with setTimeout, a DOM method: */
-  /* useEffect( () => {
+  useEffect( () => {
     const time = setTimeout( () => {
       setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)  
-    }, 10000);
+    }, 8000);
 
 
     return () => {
       clearTimeout(time);
     }
   }, [currentSlide, slideLength]);
- */
+
 
 /* Functions for Arrow Buttons if Requested by Client: */
 
@@ -46,12 +46,10 @@ function TestimonialCarousel( {carouselData} ) {
   };
 
   const navigateDots = event => {
-    //First need to target correct dot at the array index:
+  //First need to target correct dot at the array index:
     const arrayValues = event.target.getAttribute('data-key');
-    /* console.log('Here are my dots: ', arrayValues); */
-
     exactSlide(arrayValues);
-  }
+  };
 
 /* Intersection Observer Logic:
  */
@@ -81,9 +79,8 @@ function TestimonialCarousel( {carouselData} ) {
         {carouselData.map( (img, index) => {
           return (
             <div className={index === currentSlide ? 'testimonialCarousel-slide active' : 'testimonialCarousel-slide'} key={img.id}>
-              {/* <img alt={img.alt} src={img.src} /> */}
 
-            {/* TODO: the client img */}
+            {/* The client img */}
               <div className={index === currentSlide ? 'testimonialCarousel-clientimg-parent active fadeInUp' : 'testimonialCarousel-clientimg-parent'} /* ref={clientImgRef} */>
                 <img alt={img.alt} src={img.clientimg} className='testimonialCarousel-clientimg' />
               </div>

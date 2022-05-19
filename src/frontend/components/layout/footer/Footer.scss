@@ -1,4 +1,4 @@
-/* TODO: Responsive Design */
+
 .footer-parent-container {
     background-color: $background-primary;
     
@@ -90,6 +90,17 @@
             h1 {
                 font-family: $header-primaryfont;
                 font-size: $heading-primary;
+            }
+        }
+
+        .footer-img {
+            position: absolute;
+            transform: translate(50%, -50%);
+            right: 5rem;
+            top: 50%;
+            
+            img {
+                height: 100px;
             }
         }
 

@@ -9,6 +9,16 @@
     /* border: 5px solid red; */
     background-color: $background-primary;
 
+    &:first-child {
+        justify-content: flex-start;
+    }
+
+    .desktopNav-img {
+        height: 60px;
+        margin-left: 2.5rem;
+        
+    }
+
     .desktop-nav-items-container {
         display: flex;
         position: absolute;

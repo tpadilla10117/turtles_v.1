@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
     CtaButton,
     InfoSection
@@ -7,36 +7,31 @@ import {
 
 function PhotoGallery( { photos } ) {
 
-    let slideIndex = 1;
+    let slideIndex = 0;
     const modalReference = useRef(null);
 
-    const openModal = () => {
-        console.log('clicked an img to open')
-        /* document.getElementById('gallery-modal-parent').style.display = 'flex'; */
+    const openModal = (event) => {
         document.getElementById('gallery-modal-parent').classList.add('active');
         document.getElementById('gallery-modal-parent').classList.remove('fadeOut');
-        
-        showSlides(slideIndex)
-        console.log('HEre is my slideIndex: ', slideIndex)
+
+        const arrayValues = event.target.getAttribute('data-key');
+
+        currentSlide(Number(arrayValues ) + 1)
     };
 
     const closeModal = () => {
-        /* document.getElementById('gallery-modal-parent').style.display = 'none'; */
-    /* TODO: trt using setTimeout to make the fadeout happen */
+        
         document.querySelector('.modal-myslides').classList.remove('active');
         document.getElementById('gallery-modal-parent').classList.remove('active');
-
         document.getElementById('gallery-modal-parent').classList.add('fadeOut');
-
     };
 
 /* When user clicks outside of modal, close it: */
     useEffect( () => {
         function handleClick(e) {
             if(!modalReference.current?.contains(e.target)) {
-                console.log(e.target)
+                return
             } else if(e.target === document.querySelector('.gallery-modal-parent')) {
-                console.log('clicked outside')
                 closeModal();
             }
         }
@@ -50,28 +45,22 @@ function PhotoGallery( { photos } ) {
     function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("modal-myslides");
-        /* let dots = document.getElementsByClassName("demo"); */
-        /* var captionText = document.getElementById("caption"); */
+       
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
             slides[i].className = "modal-myslides"
         }
-        /* for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        } */
+       
         slides[slideIndex-1].style.display = "block";
-        /* slides[slideIndex-1].className = "modal-myslides active"; */
         setTimeout(function(){slides[slideIndex-1].className = "modal-myslides active"; }, 1 )
-        /* dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt; */
+   
     };
 
     /* Next / Previous controls: */
 
     const plusSlides = () => {
-        console.log("clicked")
         showSlides(slideIndex += 1);
     };
 
@@ -80,7 +69,6 @@ function PhotoGallery( { photos } ) {
     };
 
     const prevSlides = () => {
-        console.log('clicked prev');
         showSlides(slideIndex -= 1);
     }
     
@@ -97,21 +85,20 @@ function PhotoGallery( { photos } ) {
             
 
             <div className='gallery-wrapper gallery-row'>
-                {/* <div className='gallery-column'> */}
 
-                {photos.map( photo => {
+                {photos.map( (photo, index) => {
                     return (
                         <img 
                             src={photo.src} 
                             alt={photo.alt}
                             key={photo.id}
                             onClick={openModal}
+                            data-key={index}
                         
                         />
                     )
                     
                 })}
-                {/* </div> */}
 
             </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { NavbarData } from '../../../seed';
 import { NavLink } from 'react-router-dom';
 import '../../App.scss';
+import SampleLogo from '../../../assets/icons/SampleLogo.png';
 
 const DesktopNav = (props) => {
 
@@ -23,7 +24,15 @@ const DesktopNav = (props) => {
                     </NavLink>
                 )
             })}
+
         </div>
+
+        <NavLink
+            to={'/'}
+            exact="true"
+        >
+            <img src={SampleLogo} alt="The logo for Turtles" className="desktopNav-img" />
+        </NavLink>
 
 
     </nav> 
