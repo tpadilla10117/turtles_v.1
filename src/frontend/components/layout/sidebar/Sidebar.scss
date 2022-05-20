@@ -74,7 +74,7 @@
                         align-items: center;
 
                         &:hover {
-                            color: $text-primary;
+                            color: $text-tertiary;
                             transition: 0.3s ease-out;
                         }
                         
@@ -109,7 +109,7 @@
                     padding-right: 25px;
 
                     &:hover {
-                        color: $text-primary;
+                        color: $text-tertiary;
                     }
 
                     svg {

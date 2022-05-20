@@ -2,10 +2,20 @@
 
 /* Colors: */ 
     $background-primary: #080A52; //Midnight Blue
-    $background-secondary: #FD55AB; // Wild Strawberry
+    /* $background-secondary: #FD55AB; */ // Wild Strawberry
+    $background-secondary: #FD91C3; // 
     $background-complement: #F4EEEE; // Isabelline
-    $text-primary: #EB2188; // Deep Cerise
-    $text-secondary: #fff; //White
+    /* $text-primary: #EB2188; */ // Deep Cerise
+    $text-primary: #000000; // Black
+    $text-secondary: #F4EEEE; 
+    $text-tertiary: #FD91C3;
+
+    /* Midnight Blue background and Isabelline text work (contrast Ratio is High - 15.57:1)
+    - Isabelline background and black text, or midnight blue text
+    - #000000 text and #FD91C3 background have Conrast 10.01:1 ratio, between medium and high
+    - Isabelline buttons with Black text are good
+    - Midnight blue buttons with #FD91C3 (8.51:1 medium/minimum) or Isabelline
+    */
 
 /* Font sizes: */
     $heading-primary: 29px;
