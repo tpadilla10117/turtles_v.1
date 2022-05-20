@@ -16,11 +16,14 @@ function EmailForm( {bannerImg, alt} ) {
       <div className='emailForm-wrapper'>
         <form className='emailForm-form'>
           <div className='emailForm-form-input-wrapper'>
-            <input type='text' placeholder='Name' name='user_name' required />
-            <input type='text' placeholder='Subject' name='user_subject' required />
-            <input type='text' placeholder='Email' name='user_email' required />
-            <textarea rows='5' placeholder='Message' name='message'/>
-
+            <input id='name-input' className='form-input' type='text' placeholder='Name' name='user_name' required />
+            <label htmlFor='name-input'></label>
+            <input id='subject-input' className='form-input' type='text' placeholder='Subject' name='user_subject' required />
+            <label htmlFor='subject-input'></label>
+            <input id='email-input' className='form-input' type='text' placeholder='Email' name='user_email' required />
+            <label htmlFor='email-input'></label>
+            <textarea id='message-input' className='form-input' rows='5' placeholder='Message' name='message'/>
+            <label htmlFor='message-input'></label>
           </div>
 
           <CtaButton 

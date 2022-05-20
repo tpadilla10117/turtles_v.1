@@ -90,29 +90,12 @@
                 transform: translate(-50%, -50%);
                 height: 150px;
                 width: 150px;
-                /* animation-name: rotateIn;
-                transform-origin: center;
-                animation-duration: 3s;
 
-                &.rotateIn {
-                    @keyframes rotateIn {
-                        from {
-                          transform: rotate3d(0, 0, 1, -200deg);
-                          opacity: 0;
-                        }
-                      
-                        to {
-                          transform: translate3d(0, 0, 0);
-                          opacity: 1;
-                        }
-                      }
-                } */
-
-                &.active.fadeInUp {
+                /* &.active.fadeInUp {
                     animation-name: fadeInUp;
                     animation-duration: 1s;
                     transform: translate(-50%, -50%);
-                    /* animation-delay: 3s; */
+                    
 
                     @keyframes fadeInUp {
                         from {
@@ -125,7 +108,7 @@
                           transform: translate3d(0%, 0, 50%);
                         }
                       }
-                }
+                } */
                 
 
                 .testimonialCarousel-clientimg {
@@ -165,7 +148,7 @@
                 
                 
                 h2 {
-                    color: #fff;
+                    color: $text-secondary;
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     margin: 10px 0 10px 0;
@@ -173,7 +156,7 @@
                 }
 
                 h3 {
-                    color: #fff;
+                    color: $text-secondary;
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     margin: 10px 0 10px 0;
@@ -182,7 +165,7 @@
                 }
 
                 p {
-                    color: #fff;
+                    color: $text-secondary;
                     /* background: rgba(0, 0, 0, 0.5); */
                     font-size: 16px;
                     width: 50%;
@@ -223,7 +206,7 @@
                 /* clip-path: circle(100% at 0 50%); */
 
                 &.active {
-                    background: $text-primary;
+                    background-color: $text-tertiary;
                     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
                     /* clip-path: circle(200% at 100% 100%);
                     transition: 1.5s;
@@ -248,7 +231,7 @@
                 }
 
                 &:hover {
-                    background: $text-primary;
+                    background: $text-tertiary;
                     transition: .5s ease-in-out;
                 }
 
