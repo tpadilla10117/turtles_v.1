@@ -7,7 +7,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 5rem;
+    padding: 2rem;
+    
+
+    @media screen and (min-width: 760px) {
+        padding: 5rem;
+    }
 
     .aboutpg-gridInfoSection-txt-parent-container {
         /* border: 2px solid green; */
@@ -17,7 +22,15 @@
         padding: 2rem;
 
         .aboutpg-gridInfoSection-txt-wrapper1, .aboutpg-gridInfoSection-txt-wrapper2 {
-            display: none;
+            /* display: none; */
+            display: flex;
+            flex-direction: column-reverse;
+
+            &:last-child {
+                flex-direction: column;
+            }
+           
+            /* border: 2px solid green; */
     
             @media screen and (min-width: 760px) {
                 /* display: grid;
@@ -25,12 +38,16 @@
                 grid-column-gap: 8.3333333333%;
                 column-gap: 8.3333333333%; */
                 display: flex;
+                flex-direction: row;
                 max-width: 100%;
                 /* border: 1px solid red; */
                 width: 100%;
                 height: 100%;
                 align-items: center;
-                /* position: relative; */     
+
+                &:last-child {
+                    flex-direction: row;
+                }
                 
             }
 
@@ -38,6 +55,7 @@
             .gridInfoSection-img-parent, .gridInfoSection-img-parent2 {
                 width: calc(100% + 10px);
                 /* border: 1px solid yellow; */
+                /* margin: 2rem 0 0 0; */
 
                 @media screen and (min-width: 1024px) {
                     width: calc(110% + 10px);
@@ -70,9 +88,16 @@
             }
 
             .aboutpg-gridInfoSection-h2-parent-container {
-                /* border: 1px solid orange; */
-                padding: 2rem;
-                width: 50%;
+
+                /* border: 1px solid red; */
+                /* padding: 1rem; */
+                margin: 2rem 0 2rem 0;
+
+                @media screen and (min-width: 760px) {
+                    /* border: 1px solid orange; */
+                    padding: 2rem;
+                    width: 50%;
+                }
 
                 @media screen and (min-width: 1024px) {
                     
@@ -82,11 +107,15 @@
 
                     margin-bottom: 20px;
                     text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                    font-size: $heading-primary;
+                    color: $text-primary;
+
                     @media screen and (min-width: 1366px) {
                         font-size: 50px;
                     }
                 }
                 h2 {
+                    font-size: $paragraph-primary;
                     @media screen and (min-width: 1366px) {
                         font-size: 20px;
                     }

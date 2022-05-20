@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
 function GridInfoSection( {
@@ -18,73 +18,20 @@ function GridInfoSection( {
     content } ) {
 
 
-  const insersectionOptions = useMemo( ()=> {
-    return {
-      threshold: 1,
-      root: null, 
-      rootMargin: '0px 0px -100px 0px',
-      triggerOnce: true
-    }
-   }, []);
-    
-    const { ref: paragraph1Ref, inView: isVisible, }= useInView(insersectionOptions);
-
-  const insersectionOptions2 = useMemo( ()=> {
-    return {
-      threshold: 1,
-      root: null, 
-      rootMargin: '0px 0px -100px 0px',
-      triggerOnce: true
-    }
-   }, []);
-    
-    const { ref: paragraph2Ref, inView: isVisible2, }= useInView(insersectionOptions2);
-
-  const headingIntersectionOptions = useMemo( ()=> {
-    return {
-      threshold: 1,
-      root: null, 
-      rootMargin: '0px 0px -100px 0px',
-      triggerOnce: true
-    }
-   }, []);
-    
-    const { ref: headingRef, inView: headingIsVisible, }= useInView(headingIntersectionOptions);
-
-  const imgInteresctionOptions = useMemo( ()=> {
-    return {
-      threshold: 1,
-      root: null, 
-      rootMargin: '0px 0px -350px 0px',
-      triggerOnce: true
-    }
-   }, []);
-
-  const { ref: imgRef, inView: imgIsVisible, }= useInView(imgInteresctionOptions);
-
-  const infoSectionTxtWrapper1Options = useMemo( () => {
-
-    return {
-        threshold: 1,
+    const { ref: txtWrapperRef1, inView: txtWrapper1IsVisible, }= useInView({
+        threshold: .5,
         root: null, 
-        rootMargin: '0px 0px -350px 0px',
+        rootMargin: '0px 0px 0px 0px',
         triggerOnce: true,
-      }
-    }, []);
+      });
 
-    const { ref: txtWrapperRef1, inView: txtWrapper1IsVisible, }= useInView({infoSectionTxtWrapper1Options});
 
-    const infoSectionTxtWrapper2Options = useMemo( () => {
-
-        return {
-            threshold: 1,
-            root: null, 
-            rootMargin: '0px 0px -350px 0px',
-            triggerOnce: true,
-        }
-        }, []);
-
-    const { ref: txtWrapperRef2, inView: txtWrapper2IsVisible, } = useInView({infoSectionTxtWrapper2Options});
+    const { ref: txtWrapperRef2, inView: txtWrapper2IsVisible, } = useInView({
+        threshold: .5,
+        root: null, 
+        rootMargin: '0px 0px -50px 0px',
+        triggerOnce: true,
+      });
 
 
   return (
@@ -108,8 +55,8 @@ function GridInfoSection( {
             {txtWrapper1IsVisible ?
                 <div className={gridInfoSectionHeadingContainer}>
                     <h1 className={h1textClassname}>{h1text}</h1>
-                    <h2 ref={paragraph1Ref} className={isVisible ? 'gridInfoSection-p1 fadeInUp active' : 'gridInfoSection-p1'} >
-                        { isVisible ? ptext : ''}
+                    <h2 className='gridInfoSection-p1'>
+                        {ptext}
                     </h2>
                 </div>
         
@@ -120,7 +67,7 @@ function GridInfoSection( {
             
             </div>
 
-           {/*  <div className={txtWrapper2IsVisible ? `${gridInfoSectionTxtWrapper2ClassName} active` : gridInfoSectionTxtWrapper2ClassName} ref={txtWrapperRef2}>
+            <div className={txtWrapper2IsVisible ? `${gridInfoSectionTxtWrapper2ClassName} active` : gridInfoSectionTxtWrapper2ClassName} ref={txtWrapperRef2}>
             
 
             { txtWrapper2IsVisible ?
@@ -128,8 +75,8 @@ function GridInfoSection( {
         
             <div className={gridInfoSectionHeadingContainer}>
                 <h1 className={h1textClassname}>{h1text2}</h1>
-                <h2 ref={paragraph2Ref} className={isVisible2 ? 'gridInfoSection-p2 fadeInUp active' : 'gridInfoSection-p2'}>
-                    { isVisible2 ? ptext2 : ''}
+                <h2  className='gridInfoSection-p2'>
+                    { ptext2 }
                 </h2>
             </div>
 
@@ -142,7 +89,7 @@ function GridInfoSection( {
 
             { txtWrapper2IsVisible ?
         
-            <div className={imgIsVisible ? 'gridInfoSection-img-parent2 slide-in' : 'gridInfoSection-img-parent2'} ref={imgRef}>
+            <div className='gridInfoSection-img-parent2'>
             
                 <img src={gridInfoSectionImg2} alt={alt} className='gridInfoSection-img img2' />
             
@@ -158,7 +105,7 @@ function GridInfoSection( {
 
                 
             
-            </div> */}
+            </div>
 
         </div>
 

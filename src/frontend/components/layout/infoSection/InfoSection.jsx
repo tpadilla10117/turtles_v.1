@@ -52,7 +52,7 @@ function InfoSection( {ptext, ptext2, ptext3, headingtxt, infoSectionClassName, 
     return {
       threshold: 1,
       root: null, 
-      rootMargin: '0px 0px -350px 0px',
+      rootMargin: '0px 0px -300px 0px',
       triggerOnce: true
     }
    }, []);
