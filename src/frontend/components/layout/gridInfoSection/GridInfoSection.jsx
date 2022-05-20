@@ -67,19 +67,19 @@ function GridInfoSection( {
     return {
         threshold: 1,
         root: null, 
-        rootMargin: '0px 0px 100px 0px',
+        rootMargin: '0px 0px -350px 0px',
         triggerOnce: true,
       }
     }, []);
 
-    const { ref: txtWrapperRef1, inView: txtWrapper1IsVisible, } = useInView({infoSectionTxtWrapper1Options});
+    const { ref: txtWrapperRef1, inView: txtWrapper1IsVisible, }= useInView({infoSectionTxtWrapper1Options});
 
     const infoSectionTxtWrapper2Options = useMemo( () => {
 
         return {
             threshold: 1,
             root: null, 
-            rootMargin: '0px 0px 100px 0px',
+            rootMargin: '0px 0px -350px 0px',
             triggerOnce: true,
         }
         }, []);
@@ -90,12 +90,12 @@ function GridInfoSection( {
   return (
     <section className={gridInfoSectionClassName}>
         <div className={gridInfoSectionTxtParent}>
-            <div className={txtWrapper1IsVisible ? `${gridInfoSectionTxtWrapper1ClassName} fadeInTopLeft` : gridInfoSectionTxtWrapper1ClassName} ref={txtWrapperRef1}>
+            <div className={txtWrapper1IsVisible ? `${gridInfoSectionTxtWrapper1ClassName} active` : gridInfoSectionTxtWrapper1ClassName} ref={txtWrapperRef1}>
             
         {/* Side Img 1: */}
         
             {txtWrapper1IsVisible ?
-                <div className={imgIsVisible ? 'gridInfoSection-img-parent slide-in' : 'gridInfoSection-img-parent'} /* ref={imgRef} */>
+                <div className='gridInfoSection-img-parent' /* ref={imgRef} */>
             
                     <img src={gridInfoSectionImg} alt={alt} className='gridInfoSection-img' />
 
@@ -117,12 +117,10 @@ function GridInfoSection( {
                 ''
             }
             
-
-            
             
             </div>
 
-            <div className={txtWrapper2IsVisible ? `${gridInfoSectionTxtWrapper2ClassName} fadeInBottomRight` : gridInfoSectionTxtWrapper2ClassName} ref={txtWrapperRef2}>
+           {/*  <div className={txtWrapper2IsVisible ? `${gridInfoSectionTxtWrapper2ClassName} active` : gridInfoSectionTxtWrapper2ClassName} ref={txtWrapperRef2}>
             
 
             { txtWrapper2IsVisible ?
@@ -160,7 +158,7 @@ function GridInfoSection( {
 
                 
             
-            </div>
+            </div> */}
 
         </div>
 

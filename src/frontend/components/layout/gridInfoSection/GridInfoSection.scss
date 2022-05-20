@@ -10,9 +10,9 @@
     padding: 5rem;
 
     .aboutpg-gridInfoSection-txt-parent-container {
-        border: 2px solid green;
+        /* border: 2px solid green; */
         width: 100%;
-        min-height: 800px;
+        /* min-height: 800px; */
         background-color: $background-complement;
         padding: 2rem;
 
@@ -95,7 +95,7 @@
             }
         }
         
-        .aboutpg-gridInfoSection-txt-wrapper1, .fadeInTopLeft {
+        .aboutpg-gridInfoSection-txt-wrapper1.active {
 
             animation: fadeInTopLeft;
             animation-duration: 1.5s;
@@ -125,7 +125,7 @@
 
         }
 
-        .aboutpg-gridInfoSection-txt-wrapper2, .fadeInBottomRight {
+        .aboutpg-gridInfoSection-txt-wrapper2.active {
             animation: fadeInBottomRight;
             animation-duration: 1.5s;
             /* animation-delay: 1s; */
