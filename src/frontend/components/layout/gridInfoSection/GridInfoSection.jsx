@@ -99,7 +99,7 @@ function GridInfoSection( {
 
             <div className={imgIsVisible ? 'gridInfoSection-img-parent2 slide-in' : 'gridInfoSection-img-parent2'} ref={imgRef}>
             
-                <img src={gridInfoSectionImg2} alt={alt} className='gridInfoSection-img' />
+                <img src={gridInfoSectionImg2} alt={alt} className='gridInfoSection-img img2' />
             
             
 

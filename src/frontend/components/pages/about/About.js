@@ -30,6 +30,7 @@ function About() {
         <GridInfoSection
           gridInfoSectionClassName={'aboutpg-gridInfoSection-parent-container'}
           gridInfoSectionTxtParent={'aboutpg-gridInfoSection-txt-parent-container'}
+          gridInfoSectionHeadingContainer={'aboutpg-gridInfoSection-h2-parent-container'}
           gridInfoSectionTxtWrapper1ClassName={'aboutpg-gridInfoSection-txt-wrapper1'}
           gridInfoSectionTxtWrapper2ClassName={'aboutpg-gridInfoSection-txt-wrapper2'}
           ptext={'Turtles has a lot to offer to her students whether they are novice or seasoned.'}
