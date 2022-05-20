@@ -25,6 +25,8 @@
 
         export { default as HeroCarousel } from '../components/layout/heroCarousel/HeroCarousel.jsx';
 
+        export { default as GridInfoSection } from '../components/layout/gridInfoSection/GridInfoSection.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 

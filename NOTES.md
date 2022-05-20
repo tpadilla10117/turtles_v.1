@@ -11,6 +11,7 @@
     - Frontend: SCSS, React.js
 
 <!-- Layout Components: -->
+    <!-- TODO: Carousels need to have touch controls for user's to swipe! -->
     
 
 

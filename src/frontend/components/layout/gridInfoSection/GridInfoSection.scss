@@ -1,0 +1,175 @@
+.aboutpg-gridInfoSection-parent-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: $background-secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    
+
+    @media screen and (min-width: 760px) {
+        padding: 5rem;
+    }
+
+    .aboutpg-gridInfoSection-txt-parent-container {
+        /* border: 2px solid green; */
+        width: 100%;
+        /* min-height: 800px; */
+        background-color: $background-complement;
+        padding: 2rem;
+
+        .aboutpg-gridInfoSection-txt-wrapper1, .aboutpg-gridInfoSection-txt-wrapper2 {
+            /* display: none; */
+            display: flex;
+            flex-direction: column-reverse;
+
+            &:last-child {
+                flex-direction: column;
+            }
+           
+            /* border: 2px solid green; */
+    
+            @media screen and (min-width: 760px) {
+                /* display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 8.3333333333%;
+                column-gap: 8.3333333333%; */
+                display: flex;
+                flex-direction: row;
+                max-width: 100%;
+                /* border: 1px solid red; */
+                width: 100%;
+                height: 100%;
+                align-items: center;
+
+                &:last-child {
+                    flex-direction: row;
+                }
+                
+            }
+
+
+            .gridInfoSection-img-parent, .gridInfoSection-img-parent2 {
+                width: calc(100% + 10px);
+                /* border: 1px solid yellow; */
+                /* margin: 2rem 0 0 0; */
+
+                @media screen and (min-width: 1024px) {
+                    width: calc(110% + 10px);
+                    
+                }
+                @media screen and (min-width: 1366px) {
+                    width: calc(60% + 10px);
+                    
+                }
+
+
+                .gridInfoSection-img {
+                    /* width: 450px; */
+                    width: 100%;
+                    
+                    
+                    @media screen and (min-width: 760px) {
+                        display: block;
+                        object-fit: cover;
+                        object-position: center;
+                        top: 0;
+                        position: relative;
+                        height: 600px;
+                        border-radius: 5px;
+                       
+                    }
+        
+                }
+                
+            }
+
+            .aboutpg-gridInfoSection-h2-parent-container {
+
+                /* border: 1px solid red; */
+                /* padding: 1rem; */
+                margin: 2rem 0 2rem 0;
+
+                @media screen and (min-width: 760px) {
+                    /* border: 1px solid orange; */
+                    padding: 2rem;
+                    width: 50%;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    
+                }
+
+                h1 {
+
+                    margin-bottom: 20px;
+                    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                    font-size: $heading-primary;
+                    color: $text-primary;
+
+                    @media screen and (min-width: 1366px) {
+                        font-size: 50px;
+                    }
+                }
+                h2 {
+                    font-size: $paragraph-primary;
+                    @media screen and (min-width: 1366px) {
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+        
+        .aboutpg-gridInfoSection-txt-wrapper1.active {
+
+            animation: fadeInTopLeft;
+            animation-duration: 1.5s;
+            /* animation-delay: 1s; */
+
+            @keyframes fadeInTopLeft {
+                from {
+                  opacity: 0;
+                  transform: translate3d(-100%, -100%, 0);
+                }
+                to {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                }
+              }
+        }
+    
+        .aboutpg-gridInfoSection-txt-wrapper2 {
+
+           img {
+
+               @media screen and (min-width: 760px) {
+                   margin-top: -100px;
+                   
+               };
+           }
+
+        }
+
+        .aboutpg-gridInfoSection-txt-wrapper2.active {
+            animation: fadeInBottomRight;
+            animation-duration: 1.5s;
+            /* animation-delay: 1s; */
+
+            @keyframes fadeInBottomRight {
+                from {
+                  opacity: 0;
+                  transform: translate3d(100%, 100%, 0);
+                }
+                to {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+
+}
