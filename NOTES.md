@@ -12,6 +12,9 @@
 
 <!-- Layout Components: -->
     <!-- TODO: Carousels need to have touch controls for user's to swipe! -->
+
+    <!-- Sidebar.jsx -->
+        - ***Can tab through, but tab isn't limited to the entire overlay
     
 
 
