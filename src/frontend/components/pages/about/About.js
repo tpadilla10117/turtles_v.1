@@ -33,8 +33,10 @@ function About() {
           gridInfoSectionHeadingContainer={'aboutpg-gridInfoSection-h2-parent-container'}
           gridInfoSectionTxtWrapper1ClassName={'aboutpg-gridInfoSection-txt-wrapper1'}
           gridInfoSectionTxtWrapper2ClassName={'aboutpg-gridInfoSection-txt-wrapper2'}
-          ptext={'Turtles has a lot to offer to her students whether they are novice or seasoned.'}
-          ptext2={'With over 5 years in industry, Turtles has gained a wealth of experience in many areas over a long time.'}
+          ptext={'Turtles has a lot to offer to her students whether they are novice or seasoned. Turtles has a lot to offer to her students whether they are novice or seasoned.'}
+          ptext2={'With over 5 years in industry, Turtles has gained a wealth of experience in many areas over a long time. Turtles has a lot to offer to her students whether they are novice or seasoned.'}
+          h1text={'Born To Perform'}
+          h1text2={'Simply Outstanding'}
           gridInfoSectionImg={Amanda2}
           gridInfoSectionImg2={Amanda3}
         />

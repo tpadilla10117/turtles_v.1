@@ -12,6 +12,7 @@
     .aboutpg-gridInfoSection-txt-parent-container {
         border: 2px solid green;
         width: 100%;
+        min-height: 800px;
         background-color: $background-complement;
         padding: 2rem;
 
@@ -25,9 +26,8 @@
                 column-gap: 8.3333333333%; */
                 display: flex;
                 max-width: 100%;
-                border: 1px solid red;
+                /* border: 1px solid red; */
                 width: 100%;
-                /* width: calc(100% + 100px); */
                 height: 100%;
                 align-items: center;
                 /* position: relative; */     
@@ -36,75 +36,109 @@
 
 
             .gridInfoSection-img-parent, .gridInfoSection-img-parent2 {
-                width: 100%;
-                width: calc(100% + 50px);
-                border: 1px solid yellow;
+                width: calc(100% + 10px);
+                /* border: 1px solid yellow; */
+
+                @media screen and (min-width: 1024px) {
+                    width: calc(110% + 10px);
+                    
+                }
+                @media screen and (min-width: 1366px) {
+                    width: calc(60% + 10px);
+                    
+                }
+
 
                 .gridInfoSection-img {
                     /* width: 450px; */
-                    /* width: 100%; */
+                    width: 100%;
+                    
                     
                     @media screen and (min-width: 760px) {
                         display: block;
-                        /* justify-content: space-around; */
-                       /* border: 1px solid yellow; */
-                       object-fit: cover;
-                       object-position: center;
-                       /* width: 100%; */
-                       top: 0;
-                       position: relative;
-                       height: 500px;
-                       border-radius: 5px;
-                       
-                       
+                        object-fit: cover;
+                        object-position: center;
+                        top: 0;
+                        position: relative;
+                        height: 600px;
+                        border-radius: 5px;
                        
                     }
         
-                    @media screen and (min-width: 1024px) {
-                        /* width: calc(100% + 100px); */
-                        
-                    }
-    
-                    @media screen and (min-width: 1366px) {
-                        /* width: 600px; */
-                        
-                    }
-    
-                    @media screen and (min-width: 1700px ) {
-                        /* width: 700px;
-                        height: 600px; */
-                        /* width: calc(90% + 100px); */
-                        
-                        
-                    }
-            }
-
-    
-
+                }
                 
             }
 
             .aboutpg-gridInfoSection-h2-parent-container {
                 /* border: 1px solid orange; */
                 padding: 2rem;
+                width: 50%;
+
+                @media screen and (min-width: 1024px) {
+                    
+                }
+
+                h1 {
+
+                    margin-bottom: 20px;
+                    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                    @media screen and (min-width: 1366px) {
+                        font-size: 50px;
+                    }
+                }
+                h2 {
+                    @media screen and (min-width: 1366px) {
+                        font-size: 20px;
+                    }
+                }
+
             }
+        }
+        
+        .aboutpg-gridInfoSection-txt-wrapper1, .fadeInTopLeft {
+
+            animation: fadeInTopLeft;
+            animation-duration: 1.5s;
+            /* animation-delay: 1s; */
+
+            @keyframes fadeInTopLeft {
+                from {
+                  opacity: 0;
+                  transform: translate3d(-100%, -100%, 0);
+                }
+                to {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                }
+              }
         }
     
         .aboutpg-gridInfoSection-txt-wrapper2 {
 
-           
-            @media screen and (min-width: 760px) {
-                margin-top: -64px;
-                
-            };
+           img {
 
-            .gridInfoSection-img-parent2 {
-                @media screen and (min-width: 760px) {
-                    
+               @media screen and (min-width: 760px) {
+                   margin-top: -100px;
                    
-                    
+               };
+           }
+
+        }
+
+        .aboutpg-gridInfoSection-txt-wrapper2, .fadeInBottomRight {
+            animation: fadeInBottomRight;
+            animation-duration: 1.5s;
+            /* animation-delay: 1s; */
+
+            @keyframes fadeInBottomRight {
+                from {
+                  opacity: 0;
+                  transform: translate3d(100%, 100%, 0);
                 }
-                
+                to {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                }
             }
         }
     }
