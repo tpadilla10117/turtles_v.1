@@ -3,10 +3,9 @@ import {
   CtaButton
 } from '../../utils';
 
-/* TODO: Finish styling */
 function EmailForm( {bannerImg, alt} ) {
   return (
-    <div className='emailForm-parent-container'>
+    <article className='emailForm-parent-container'>
       <img src={bannerImg} alt={alt} className='emailForm-img' />
 
       <div className='emailForm-header-parent-container'>
@@ -15,7 +14,11 @@ function EmailForm( {bannerImg, alt} ) {
 
       <div className='emailForm-wrapper'>
         <form className='emailForm-form'>
+          
           <div className='emailForm-form-input-wrapper'>
+            <div className='emailForm-form-header-wrapper'>
+              <h1>Contact Me</h1>
+            </div>
             <input id='name-input' className='form-input' type='text' placeholder='Name' name='user_name' required />
             <label htmlFor='name-input'></label>
             <input id='subject-input' className='form-input' type='text' placeholder='Subject' name='user_subject' required />
@@ -35,7 +38,7 @@ function EmailForm( {bannerImg, alt} ) {
 
       </div>
 
-    </div>
+    </article>
   )
 }
 

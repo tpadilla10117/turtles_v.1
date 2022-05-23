@@ -4,7 +4,7 @@ function TestimonialSection( {content} ) {
 
   return (
     <section className='testimonialSection-parent-container'>
-      {/* TestimonialCarousel.jsx Component */}
+    {/* TestimonialCarousel.jsx Component */}
         { content }
 
     </section>

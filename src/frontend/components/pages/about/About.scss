@@ -62,11 +62,23 @@
         }
 
         .infoSection-img-parent.slide-in {
-            animation: fadeInRight;
-            animation-duration: 1s;
-            /* animation-delay: .1s; */
+            /* animation: fadeInRight; */
+            animation: fadeIn;
+            animation-duration: 1.5s;
+            transition-timing-function: ease-in-out;
+            /* animation-delay: .5s; */
+
+            @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                }
+              
+                to {
+                  opacity: 1;
+                }
+              }
     
-            @keyframes fadeInRight {
+            /* @keyframes fadeInRight {
                 from {
                 opacity: 0;
                 transform: translate3d(100%, 0%, 0);
@@ -76,7 +88,7 @@
                 opacity: 1;
                 transform: translate3d(0, 0, 0);
                 }
-            }
+            } */
         }
 
         div {

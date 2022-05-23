@@ -6,16 +6,16 @@ function AboutSection() {
   return (
     <section className='aboutSection-parent-container'>
         <div className='aboutSection-wrapper'>
-            <div className='aboutSection-inforow'>
+            <article className='aboutSection-inforow'>
             
                 <div className='aboutSection-column1'>
                     
-                    <div className='aboutSection-img-wrapper'>
+                    <figure className='aboutSection-img-wrapper'>
                         <img src={AmandaFlex} 
                         alt='Amanda performing'
                         className='aboutSection-img' 
                         />
-                    </div>
+                    </figure>
                     <h2>"Lorem impsum dolor sit amet"</h2>
                 </div>
 
@@ -36,7 +36,7 @@ function AboutSection() {
 
                 </div>
 
-            </div>
+            </article>
 
         </div>
 

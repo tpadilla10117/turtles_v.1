@@ -2,15 +2,29 @@ import React, {useState} from 'react';
 import {
   Footer,
   EmailSection,
-  EmailForm
+  EmailForm,
+  TestimonialSection,
+  TestimonialCarousel,
+  ContactBlock
 } from '../../utils.js';
 import Amanda from '../../../assets/images/Amanda-73.jpeg';
+import { testimonialCarouselData } from '../../../seed';
 
 function Contact() {
   const [ emailFormAltTxt ] = useState('A banner');
 
   return (
-    <div>
+    <section>
+
+
+        {/* TODO: ContactBlock: */}
+        <ContactBlock />
+
+        <TestimonialSection 
+          content={
+            <TestimonialCarousel carouselData={testimonialCarouselData} />
+          }
+        />
         
         <EmailSection 
           content={<EmailForm 
@@ -19,10 +33,9 @@ function Contact() {
           />}
         />
 
-        {/* TODO: Testimonials Section */}
 
         <Footer />
-    </div>
+    </section>
   )
 }
 

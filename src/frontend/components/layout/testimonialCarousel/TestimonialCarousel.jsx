@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function TestimonialCarousel( {carouselData} ) {
 
-  /* CAROUSEL LOGIC: */
+/* CAROUSEL LOGIC: */
 
   //Using the carouselData index to match against the number from currentSlide
   //If there's a match, the DOM elements (slide, buttons), get an 'active' class
@@ -75,15 +75,17 @@ function TestimonialCarousel( {carouselData} ) {
         onClick={previousSlide}
       />
       
-      <div className='testimonialCarousel-img-slider'>
+      <article className='testimonialCarousel-img-slider'>
+        {/* TODO: Add some sort of header */}
+        {/* <h1>Testimonials</h1> */}
         {carouselData.map( (img, index) => {
           return (
             <div className={index === currentSlide ? 'testimonialCarousel-slide active' : 'testimonialCarousel-slide'} key={img.id}>
 
             {/* The client img */}
-              <div className={index === currentSlide ? 'testimonialCarousel-clientimg-parent active fadeInUp' : 'testimonialCarousel-clientimg-parent'} /* ref={clientImgRef} */>
+              <figure className={index === currentSlide ? 'testimonialCarousel-clientimg-parent active fadeInUp' : 'testimonialCarousel-clientimg-parent'} /* ref={clientImgRef} */>
                 <img alt={img.alt} src={img.clientimg} className='testimonialCarousel-clientimg' />
-              </div>
+              </figure>
 
               <div className={`testimonialCarousel-info ${img.id}`}>
               
@@ -110,6 +112,7 @@ function TestimonialCarousel( {carouselData} ) {
                 {/* <hr></hr> */}
 
               </div>
+              
             </div>
           )
         })}
@@ -118,16 +121,19 @@ function TestimonialCarousel( {carouselData} ) {
 
           {carouselData.map( (btn, index) => {
             return (
-              <div className={index === currentSlide ? 'testimonialCarousel-navigation-btn active' : 'testimonialCarousel-navigation-btn'} key={btn.buttonId} data-key={index} /* onClick={event => activeSlide(event)} */ onClick={navigateDots}></div>
+              <div className={index === currentSlide ? 'testimonialCarousel-navigation-btn active' : 'testimonialCarousel-navigation-btn'} key={btn.buttonId} data-key={index} /* onClick={event => activeSlide(event)} */ onClick={navigateDots}>
+                
+              </div>
             )
           })}
 
         </div>
 
-      </div>
+      </article>
 
     </section>
   )
 }
 
 export default TestimonialCarousel;
+

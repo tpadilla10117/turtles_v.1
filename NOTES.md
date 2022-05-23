@@ -6,6 +6,9 @@
 
     - SEO Insights: https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.tpadilla.com%2F
 
+    - Semantic HTML: 
+        Resource: { https://www.freecodecamp.org/news/semantic-html5-elements/#:~:text=Semantic%20HTML%20elements%20are%20those,content%20that%20is%20inside%20them. }
+
 
 <!-- Color Ideas: -->
     - Midnight Blue background and Isabelline text work (contrast Ratio is High - 15.57:1)

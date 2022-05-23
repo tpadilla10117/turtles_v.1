@@ -27,6 +27,8 @@
 
         export { default as GridInfoSection } from '../components/layout/gridInfoSection/GridInfoSection.jsx';
 
+        export { default as ContactBlock } from '../components/layout/contactBlock/ContactBlock.jsx';
+
 
 /* -------------------------------------------------------------------------- */
 

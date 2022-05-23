@@ -42,11 +42,11 @@ function GridInfoSection( {
         {/* Side Img 1: */}
         
             {txtWrapper1IsVisible ?
-                <div className='gridInfoSection-img-parent' /* ref={imgRef} */>
+                <figure className='gridInfoSection-img-parent' /* ref={imgRef} */>
             
                     <img src={gridInfoSectionImg} alt={alt} className='gridInfoSection-img' />
 
-                </div>
+                </figure>
             :
 
                 ''
@@ -89,11 +89,11 @@ function GridInfoSection( {
 
             { txtWrapper2IsVisible ?
         
-            <div className='gridInfoSection-img-parent2'>
+            <figure className='gridInfoSection-img-parent2'>
             
                 <img src={gridInfoSectionImg2} alt={alt} className='gridInfoSection-img img2' />
             
-            </div>
+            </figure>
     
             :
                 

@@ -89,7 +89,7 @@ function InfoSection( {ptext, ptext2, ptext3, headingtxt, infoSectionClassName, 
 
       {/* Side Img: */}
       
-        <div className={imgIsVisible ? 'infoSection-img-parent slide-in' : 'infoSection-img-parent'} ref={imgRef}>
+        <figure className={imgIsVisible ? 'infoSection-img-parent slide-in' : 'infoSection-img-parent'} ref={imgRef}>
           {imgIsVisible ?
             <img src={infoSectionImg} alt={alt} className='infoSection-img' />
             
@@ -99,7 +99,7 @@ function InfoSection( {ptext, ptext2, ptext3, headingtxt, infoSectionClassName, 
           }
           
 
-        </div>
+        </figure>
 
     </section>
   )

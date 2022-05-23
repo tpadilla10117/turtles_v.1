@@ -1,4 +1,4 @@
-/* TODO: This page is for when a user first travels to the site: */
+/* This page is for when a user first travels to the site: */
 import React, { useState } from 'react';
 import { 
     AboutSection,
@@ -60,11 +60,14 @@ const Landing = () => {
       />
 
       <EmailSection 
-        content={<EmailForm 
+        content={
+          <EmailForm 
             bannerImg={Amanda} 
-            alt={emailFormAltTxt} />}
+            alt={emailFormAltTxt} 
+          />
+        }
     
-        />
+      />
 
       <Footer />
 

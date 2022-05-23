@@ -13,7 +13,7 @@ import Amanda3 from '../../../assets/images/Amanda-62.jpeg';
 
 function About() {
   return (
-    <div className='aboutpg-parent-container'>
+    <section className='aboutpg-parent-container'>
         
         <HeroCarousel imgData={heroCarouselData} />
         <InfoSection 
@@ -41,7 +41,7 @@ function About() {
           gridInfoSectionImg2={Amanda3}
         />
         <Footer />
-    </div>
+    </section>
   )
 }
 
