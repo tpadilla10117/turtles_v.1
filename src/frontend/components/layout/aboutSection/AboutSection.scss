@@ -96,13 +96,27 @@
                 .aboutSection-column2-text-wrapper {
                     /* border: 1px solid green; */
                     width: 80%;
-                    display: flex;
+                    margin: 0 0 1rem 0;
+
+                    .aboutSection-column2-text-h2 {
+                        display: none;
+
+                        @media (min-width: 760px) {
+                            display: block;
+                            margin: 0 0 2rem 0;
+                            font-size: $heading-primary;
+                        }
+                    }
                     
                     .aboutSection-column2-text {
                         color: $text-primary;
                         font-size: $paragraph-primary;
                         font-family: $paragraph-lightfont;
                         text-align: left;
+
+                        @media (min-width: 760px) {
+                            margin: 0 0 3rem 0;
+                        }
                     }
                 }
 

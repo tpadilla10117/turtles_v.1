@@ -53,8 +53,8 @@
     .emailForm-header-parent-container {
         position: absolute;
         z-index: 2;
-        top: 15%;
-        left: 7%;
+        top: 10%;
+        left: 5%;
 
 
         .emailForm-header {
@@ -62,8 +62,12 @@
             font-family: $header-primaryfont;
             font-weight: 400;
             font-size: $heading-primary;
-            /* TODO: Needs shadow */
-            text-shadow: 0px 50px 50px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 100% ), linear-gradient(190deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+            border-radius: 5px;
+            padding: .5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            /* text-shadow: 0px 50px 50px rgba(0, 0, 0, 0.25); */
         }
     }
 

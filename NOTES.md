@@ -7,6 +7,18 @@
     - SEO Insights: https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.tpadilla.com%2F
 
 
+<!-- Color Ideas: -->
+    - Midnight Blue background and Isabelline text work (contrast Ratio is High - 15.57:1)
+    - Isabelline background and black text, or midnight blue text
+    - #000000 text and #FD91C3 background have Contrast 10.01:1 ratio, between medium and high
+    - Isabelline buttons with Black text are good
+    - Midnight blue buttons with #FD91C3 (8.51:1 medium/minimum) or Isabelline
+
+    Original Palette:
+        /* $background-secondary: #FD55AB; */ // Wild Strawberry
+        /* $text-primary: #EB2188; */ // Deep Cerise
+
+
 <!-- Stack: -->
     - Frontend: SCSS, React.js
 
