@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The About.js component: expect to render the About.js component 1`] = `ShallowWrapper {}`;
+
+exports[`The About.js component: expect to render the HeroCarousel 1`] = `ShallowWrapper {}`;
