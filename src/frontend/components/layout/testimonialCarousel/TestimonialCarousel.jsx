@@ -68,6 +68,7 @@ function TestimonialCarousel( {carouselData} ) {
   return (
     <section className='testimonialCarousel-parent-container'>
       <ArrowForwardIosIcon className='testimonialCarousel-forwardarrow'
+      id='testimonialCarousel-forwardarrow'
         onClick={nextSlide}
       />
 

@@ -23,4 +23,20 @@ describe('The TestimonialCarousel.jsx component:', () => {
         expect(shallow(<TestimonialCarousel carouselData={mockPhotoProps}/>).length).toEqual(1);
         expect(shallow(<TestimonialCarousel carouselData={mockPhotoProps} />)).toMatchSnapshot();
     })
+
+    it('renders one article tag', () => {
+        const wrapper = shallow(<TestimonialCarousel carouselData={mockPhotoProps} />);
+        expect(wrapper.find('article').length).toEqual(1);
+    })
+
+    it('should update state on click', () => {
+        const nextSlide = jest.fn();
+        const mockComponentWrapper = mount(<TestimonialCarousel carouselData={mockPhotoProps} />);
+
+        const handleClick = jest.spyOn(React, "useState");
+        handleClick.mockImplementation(slide => [slide, nextSlide]);
+
+        mockComponentWrapper.find("#testimonialCarousel-forwardarrow").simulate("click");
+        expect(nextSlide).toBeCalled();
+    })
 })
