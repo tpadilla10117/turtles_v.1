@@ -22,10 +22,15 @@ describe('The EmailForm.jsx component:', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    it('renders out the correct props', () => {
-
-        expect(wrapper.props().alt).toEqual('text')
-        /* expect(wrapper.props().alt).toEqual('text'); */
+    /* it('renders out the correct props', () => {
+        const mockProps = {
+            bannerImg: '',
+            alt: 'text'
+        };
         
-    })
+        let wrapper = shallow(<EmailForm alt={mockProps.alt} />)
+        expect(wrapper.prop(mockProps.alt)).toEqual('text');
+
+        
+    }) */
 })
