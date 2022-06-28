@@ -139,7 +139,8 @@ function PhotoGallery( { photos } ) {
                 {/* TODO: Next/Prev controls: need MUI icons*/}
 
                     <a className="modal-prev" onClick={prevSlides}>&#10094;</a>
-                    <a className="modal-next" onClick={plusSlides}>&#10095;</a>
+                    <a className="modal-next"
+                    id='modal-next' onClick={plusSlides}>&#10095;</a>
 
 
                 {/* TODO: Caption Text */}

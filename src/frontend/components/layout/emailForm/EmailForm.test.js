@@ -1,15 +1,15 @@
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import React from 'react';
 import EmailForm from './EmailForm';
 
 describe('The EmailForm.jsx component:', () => {
     let wrapper;
+    const mockProps = {
+        bannerImg: '',
+        alt: ''
+    };
 
     beforeEach( () => {
-        const mockProps = {
-            bannerImg: '',
-            alt: ''
-        };
 
         wrapper = shallow(<EmailForm {...mockProps} alt='text' bannerImg='text.jpeg'/>)
         
@@ -22,15 +22,10 @@ describe('The EmailForm.jsx component:', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    /* it('renders out the correct props', () => {
-        const mockProps = {
-            bannerImg: '',
-            alt: 'text'
-        };
-        
-        let wrapper = shallow(<EmailForm alt={mockProps.alt} />)
-        expect(wrapper.prop(mockProps.alt)).toEqual('text');
-
-        
-    }) */
+    it('renders out the correct props', () => {
+       const mockWrapper = mount(<EmailForm alt={mockProps.alt} bannerImg={mockProps.bannerImg} />);
+       expect.assertions(2);
+       expect(mockWrapper.props().alt).toEqual(mockProps.alt);
+       expect(mockWrapper.props().bannerImg).toEqual(mockProps.bannerImg);
+    })
 })
