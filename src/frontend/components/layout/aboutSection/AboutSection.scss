@@ -10,8 +10,7 @@
         padding: 24px;
 
         @media (min-width: 760px) {
-            padding: 0;
-            
+            /* padding: 0; */
         }
 
         .aboutSection-inforow {
@@ -26,13 +25,13 @@
             }
 
             .aboutSection-column1 {
-                /* border: 5px solid red; */
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
                 text-align: center;
                 margin: 25px 0 0 0;
+                /* border: 1px solid yellow; */
 
                 @media (min-width: 760px) {
                     /* border: 1px solid green; */
@@ -45,7 +44,7 @@
                     color: $text-primary;
                     font-family: $header-secondaryfont;
                     font-size: $heading-primary;
-                    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+                    text-align: left;
                     margin: 25px 0 25px 0;
 
                     @media (min-width: 760px) {
@@ -55,7 +54,7 @@
 
                 .aboutSection-img-wrapper {
                     height: 300px;
-                    width: 300px;
+                    width: 100%;
                     border-radius: 5px;
 
                     @media (min-width: 760px) {
@@ -69,7 +68,7 @@
                     
                     .aboutSection-img {
                         height: 300px;
-                        width: 300px;
+                        width: 100%;
                         object-fit: cover;
                         border-radius: 5px;
 
@@ -93,10 +92,15 @@
                 align-items: center;
                 justify-content: center;
 
+                @media (min-width: 760px) {
+                    padding: 25px;
+                }
+                
+
                 .aboutSection-column2-text-wrapper {
                     /* border: 1px solid green; */
-                    width: 80%;
-                    margin: 0 0 1rem 0;
+                    width: 100%;
+                    margin: 0 0 2rem 0;
 
                     .aboutSection-column2-text-h2 {
                         display: none;
@@ -104,7 +108,7 @@
                         @media (min-width: 760px) {
                             display: block;
                             margin: 0 0 2rem 0;
-                            font-size: $heading-primary;
+                            font-size: $heading-primary-tablets;
                         }
                     }
                     
@@ -114,8 +118,17 @@
                         font-family: $paragraph-lightfont;
                         text-align: left;
 
-                        @media (min-width: 760px) {
+                        @media (min-width: 480px) {
+                            font-size: $paragraph-primary-tablets;
+                        }
+
+                        @media (min-width: 769px) {
                             margin: 0 0 3rem 0;
+                            /* font-size: $paragraph-primary-tablets; */
+                        }
+                        @media (min-width: 1024px) {
+                            margin: 0 0 3rem 0;
+                            font-size: $paragraph-primary-smallscreens;
                         }
                     }
                 }

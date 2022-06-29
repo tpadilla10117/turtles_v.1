@@ -16,7 +16,7 @@ function AboutSection() {
                         className='aboutSection-img' 
                         />
                     </figure>
-                    <h2>"Lorem impsum dolor sit amet"</h2>
+                    <h2>Dynamic and Versatile Peformer</h2>
                 </div>
 
             {/* Text with button at bottom */}
@@ -24,14 +24,14 @@ function AboutSection() {
                     <div className='aboutSection-column2-text-wrapper'>
                         <h2 className='aboutSection-column2-text-h2'>Come say Hello</h2>
                         <p className='aboutSection-column2-text'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        With over 10 years in the industry, Amanda 'Turtles' has gained a plethora of experience in a variety of settings.  From private events to corporate productions, she is sure to amaze you!  Turtles brings her passion to every performance and every lesson.  Catch her in the studio.
                         
                         </p>
                     </div>
 
                     <CtaButton 
-                            classnames={'aboutSection-column2-btn'}
-                            text={'About'}
+                        classnames={'aboutSection-column2-btn'}
+                        text={'About'}
                     />
 
                 </div>
