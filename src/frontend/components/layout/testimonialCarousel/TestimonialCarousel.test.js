@@ -1,7 +1,6 @@
 import { shallow, mount } from 'enzyme';
 import React from 'react';
 import TestimonialCarousel from './TestimonialCarousel';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 describe('The TestimonialCarousel.jsx component:', () => {
 
@@ -57,15 +56,18 @@ describe('The TestimonialCarousel.jsx component:', () => {
         expect(container2.prop('onClick')).toBeTruthy();
     });
 
-    it('checks the current slide', () => {
+    it('checks to see if a current slide is active', () => {
         const mockComponentWrapper = mount(<TestimonialCarousel carouselData={mockPhotoProps} />);
+        expect.assertions(4);
         expect(mockComponentWrapper.length).toEqual(1);
 
         const container = mockComponentWrapper.find('.testimonialCarousel-img-slider');
         expect(container.length).toEqual(1);
 
-        const container2 = container.find('.testimonialCarousel-slide active');
-        console.log(container2.debug())
-        /* expect(container2.length).toEqual(1);   */      
+        const container2 = mockComponentWrapper.find('.testimonialCarousel-slide .active');
+        
+        expect(container2.length).toEqual(1);
+        expect(container2.props().className).toEqual('testimonialCarousel-clientimg-parent active fadeInUp')
+        
     })
 })
