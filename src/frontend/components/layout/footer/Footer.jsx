@@ -15,7 +15,7 @@ function Footer() {
                         {NavbarData.map( footerlinks => {
                             return (
                                 <NavLink key={footerlinks.id} id={footerlinks.id} to={footerlinks.path} className='footer-link' >
-                                    {footerlinks.title}
+                                    <span>{footerlinks.title}</span>
                                 </NavLink>
                             )
                         })}
