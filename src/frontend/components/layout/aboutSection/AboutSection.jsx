@@ -34,6 +34,13 @@ function AboutSection() {
                         text={'About'}
                     />
 
+                    {/* <a 
+                        href='#'
+                        className='aboutSection-link'
+                    > 
+                        Learn More About Turtles
+                    </a> */}
+
                 </div>
 
             </article>

@@ -20,7 +20,7 @@ const DesktopNav = (props) => {
                         key={index}
                         id={item.id}
                     >
-                        {item.title}
+                        <span>{item.title}</span>
                     </NavLink>
                 )
             })}
